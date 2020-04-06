@@ -6,20 +6,12 @@ const Navbar = () => {
     return (
         <div className="div">
             <img src={logo} style={logoStyle} />
-            <div style={buttonDivStyle}>
-                <button
-                    style={buttonStyle}>
-                    Home
+
+            <button
+                style={buttonStyle}>
+                Home
         </button>
-                <button
-                    style={buttonStyle}>
-                    Event
-        </button>
-                <button
-                    style={buttonStyle}>
-                    About
-        </button>
-            </div>
+
         </div>
     );
 }
@@ -32,10 +24,6 @@ const logoStyle = {
 };
 
 const buttonStyle = {
-    margin: '0 2% 0 2%',
-}
-
-const buttonDivStyle ={
-    marginLeft: "70%",
+    marginLeft: "auto",
     display: "flex"
 }
