@@ -1,15 +1,27 @@
 import React from 'react';
 import logo from './../assets/images/logo.jpg';
 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <div className="div">
             <img src={logo} style={logoStyle} />
 
-            <button
+            <Link to="/"><button
                 style={buttonStyle}>
                 Home
-        </button>
+        </button></Link>
+            <Link to="/events"><button
+                style={buttonStyle}>
+                Event
+        </button></Link>
+            
 
         </div>
     );
