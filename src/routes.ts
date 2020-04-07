@@ -1,5 +1,3 @@
-import React from "react";
-
 // layouts
 import DefaultLayout from "./layouts/DefaultLayout";
 // views
