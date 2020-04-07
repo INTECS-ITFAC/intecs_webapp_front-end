@@ -13,12 +13,12 @@ function App() {
   return (
     <Router>
       <Navbar></Navbar>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/events">
-            <Events />
-          </Route>   
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/events">
+        <Events />
+      </Route>
     </Router>
   );
 }
