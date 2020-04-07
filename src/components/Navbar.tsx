@@ -19,7 +19,19 @@ const Navbar = () => {
             <Link to="/events">
                 <button
                 style={buttonStyle}>
-                Event
+                Events
+                </button>
+            </Link>
+            <Link to="/projects">
+                <button
+                style={buttonStyle}>
+                Projecs
+                </button>
+            </Link>
+            <Link to="/about">
+                <button
+                style={buttonStyle}>
+                About
                 </button>
             </Link>
 

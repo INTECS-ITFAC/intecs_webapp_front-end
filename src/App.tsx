@@ -8,6 +8,9 @@ import {
 import Home from './components/Home';
 import Events from './components/Events';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Projects from './components/Projects';
+import About from './components/About';
 
 function App() {
   return (
@@ -19,6 +22,13 @@ function App() {
       <Route path="/events">
         <Events />
       </Route>
+      <Route path="/projects">
+        <Projects />
+      </Route>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Footer></Footer>
     </Router>
   );
 }
