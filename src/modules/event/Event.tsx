@@ -9,6 +9,7 @@ export class Event extends Component {
     return (
       <div className="event-container">
         <div>Allocated Space for Event </div>
+        <div>Happy Cooding...! </div>
       </div>
     );
   }
