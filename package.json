@@ -2,6 +2,7 @@
   "name": "intecs_webapp_front-end",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://INTECS-ITFAC.github.io/intecs_webapp_front-end",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
