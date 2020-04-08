@@ -8,7 +8,7 @@ export class Event extends Component {
   render() {
     return (
       <div className="event-container">
-        <div>Event Allocated Space</div>
+        <div>Allocated Space for Event </div>
       </div>
     );
   }
