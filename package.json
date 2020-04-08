@@ -2,6 +2,7 @@
   "name": "intecs_webapp_front-end",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://INTECS.github.io/intecs_webapp_front-end",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -29,7 +30,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pretty-quick": "pretty-quick"
+    "pretty-quick": "pretty-quick",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.3",
     "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1"
