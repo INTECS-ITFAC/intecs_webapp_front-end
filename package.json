@@ -1,4 +1,5 @@
 {
+  "homepage": "http://INTECS-ITFAC.github.io/intecs_webapp_front-end",
   "name": "intecs_webapp_front-end",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +29,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pretty-quick": "pretty-quick",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,5 +48,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "husky": "^4.2.3",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
