@@ -29,7 +29,7 @@ jobs:
         env:
           CI: true
       - name: Deploy to GH Pages
-        run: |
+        run:
         git config --global user.email ${{secrets.EMAIL}}
         git config --global user.name ${{secrets.USERNAME}}
         git remote set-url origin https://${{secrets.PAT}}@github.com/${{secrets.USERNAME}}>/intecs_webapp_front-end.git
