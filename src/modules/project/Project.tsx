@@ -8,7 +8,7 @@ export class Project extends Component {
   render() {
     return (
       <div className="project-container">
-        <div>Project Allocated Space</div>
+        <div>Project allocated space</div>
       </div>
     );
   }
