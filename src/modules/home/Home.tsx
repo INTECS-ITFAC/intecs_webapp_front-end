@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "../../components/navbar/Navbar";
+//import Navbar from "../../components/navbar/Navbar";
 import HomeCarousel from "../../components/homeCarousel/HomeCarousel";
 import Contactus from "../../components/contactus/Contactus";
 import EventList from "../../components/eventList/EventList";
