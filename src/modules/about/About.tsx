@@ -7,7 +7,7 @@ export class About extends Component {
   render() {
     return (
       <div className="about-container">
-        <div>About us Allocation space</div>
+        <div>Allocated space for About us</div>
       </div>
     );
   }
