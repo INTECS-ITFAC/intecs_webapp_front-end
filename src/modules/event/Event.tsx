@@ -10,6 +10,7 @@ export class Event extends Component {
       <div className="event-container">
         <div>Allocated Space for Event </div>
         <div>Happy Cooding...! </div>
+        <div>Let's go...! </div>
       </div>
     );
   }
