@@ -33,11 +33,11 @@ If you would like to contribute, start by searching through the issues. After pi
 
 ## Rules :-
 
-__will be added__
+_will be added_
 
 ## Style Guide :-
 
-__will be added__
+_will be added_
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -101,4 +101,4 @@ This Code of Conduct extends both inside project spaces as well as in public spa
 
 ## Enforcement 
 
- __will be added__
+ _will be added_
