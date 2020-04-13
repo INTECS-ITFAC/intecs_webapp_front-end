@@ -1,9 +1,44 @@
+# NTECS Open Source - Contribution Guidelines
+
+## Types of contributions we're looking for :-
+
+People with enthusiasm to contribute to open source projects to gain knowledge and experience are welcome. 
+(Read the “How to Contribute” section thoroughly before joining the project and post any inquiries regarding the above in the common slack channel)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Expectations :-
+Before we get started, here are a few things we expect from you
+(and that you should expect from others):
+
+- Be kind and thoughtful in your conversations related to the project. We all come from different backgrounds and projects, hence we are likely to have different perspectives on "how open source is done." So, be respectful of different viewpoints.
+
+- Open Source Code of conduct is published here <link>. You must go through this before participating. 
+
+- By participating in this project, you agree to all the terms mentioned in this document.
+
+- Once you open a pull request, please ensure that your contribution passes all tests. If there are test failures, you will need to address them before your contribution is merged.
+
+## How to contribute :-
+
+If you would like to contribute, start by searching through the issues. After picking one,  please check whether someone else has already started working on the issue. If you get interested. Please follow the succeeding steps to make your contribution
+
+1. Join the slack channel which is mentioned in the project.
+2. Add a comment on the selected issue to reserve it for yourself. 
+3. To know further details regarding a certain issue, you are facilitated to discuss with the mentor who is assigned to that issue through the slack channel.
+4. Fork the project to your personal account.
+5. Checkout to the “dev” branch.
+6. The issue ID should be mentioned in the commit message.
+7. When you complete a task and wish to male a pull request, make sure to mention any special comments in the pull request itself. 
+
+## Rules :-
+
+
+## Style Guide :-
 
 ## Available Scripts :-
 
 In the project directory, you can run:
-
 
 ### `npm start`
 
@@ -22,21 +57,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More ..
 
