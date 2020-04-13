@@ -65,7 +65,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 </br>
 
-# INTECS Open Source - Contributor’s Code Of conduct
+# INTECS Open Source - Contributor’s Code of Conduct
 
 ## Our Pledge :
 
