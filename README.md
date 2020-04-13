@@ -5,7 +5,7 @@
 People with enthusiasm to contribute to open source projects to gain knowledge and experience are welcome. 
 (Read the “How to Contribute” section thoroughly before joining the project and post any inquiries regarding the above in the gitter community). Also please go through code of conduct section as well.
 
-Join Gitter Community [here](https://github.com/facebook/create-react-app)
+Join Gitter Community [Here](https://github.com/facebook/create-react-app)
 
 ## Expectations :-
 Before we get started, here are a few things we expect from you
@@ -33,8 +33,11 @@ If you would like to contribute, start by searching through the issues. After pi
 
 ## Rules :-
 
+__will be added__
 
 ## Style Guide :-
+
+__will be added__
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -64,15 +67,38 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 # NTECS Open Source - Contributor’s Code Of conduct
 
-## Our Pledge:
+## Our Pledge :
 
 As Contributors and maintainers of INTECS Open Source project, we pledge to make participation in our project a harassment-free, open experience for each and every one of you regardless of seniority, physical disabilities and physical appearance, ethnicity, gender, level of expression, nationality and religion.
 
-## Vision:
+## Vision :
 
 To inspire young individuals in programming while motivating them to actively contribute to open source projects and gain exposure to the open-source community and ethics.
 
-## Our Standards:
+## Our Standards :
 
 INTECS Opensource is open for all the undergraduates of the Faculty of Information Technology, University of Moratuwa.
 All the participants should adhere to professional conduct and contribute to creating a positive environment. Examples for such behaviour include:
+
+- Use professional and formal speech.
+- Being respectful of differing viewpoints and experiences.
+- Gracefully accepting constructive criticism.
+- Focusing on what is best for the community.
+- Showing empathy towards other community members.
+- Be responsible for the task undertaken.
+
+Examples of unacceptable behaviour by participants include:
+
+- Trolling, insulting/derogatory comments, and personal or political attacks.
+- Abusive or insulting comments between undergraduates or between batches.
+- Public or private harassment
+- Publishing others' private information, such as a physical or electronic address, without explicit permission
+- Other conduct which could reasonably be considered inappropriate in a professional setting
+
+## Scope of code of conduct :
+
+This Code of Conduct extends both inside project spaces as well as in public spaces in which a person serves the project or the community.
+
+## Enforcement 
+
+ __will be added__
