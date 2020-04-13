@@ -3,7 +3,9 @@
 ## Types of contributions we're looking for :-
 
 People with enthusiasm to contribute to open source projects to gain knowledge and experience are welcome. 
-(Read the “How to Contribute” section thoroughly before joining the project and post any inquiries regarding the above in the common slack channel)
+(Read the “How to Contribute” section thoroughly before joining the project and post any inquiries regarding the above in the gitter community). Also please go through code of conduct section as well.
+
+Join Gitter Community [here](https://github.com/facebook/create-react-app)
 
 ## Expectations :-
 Before we get started, here are a few things we expect from you
@@ -59,9 +61,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 </br>
-</hr>
 
-# Contributor’s Code Of conduct
+# NTECS Open Source - Contributor’s Code Of conduct
 
 ## Our Pledge:
 
