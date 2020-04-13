@@ -1,4 +1,4 @@
-# NTECS Open Source - Contribution Guidelines
+# INTECS Open Source - Contribution Guidelines
 
 ## Types of contributions we're looking for :-
 
@@ -65,7 +65,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 </br>
 
-# NTECS Open Source - Contributor’s Code Of conduct
+# INTECS Open Source - Contributor’s Code of Conduct
 
 ## Our Pledge :
 
