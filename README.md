@@ -55,4 +55,23 @@ Builds the app for production to the `build` folder. It correctly bundles React 
 ## Learn More ..
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+</br>
+</hr>
+
+# Contributor’s Code Of conduct
+
+## Our Pledge:
+
+As Contributors and maintainers of INTECS Open Source project, we pledge to make participation in our project a harassment-free, open experience for each and every one of you regardless of seniority, physical disabilities and physical appearance, ethnicity, gender, level of expression, nationality and religion.
+
+## Vision:
+
+To inspire young individuals in programming while motivating them to actively contribute to open source projects and gain exposure to the open-source community and ethics.
+
+## Our Standards:
+
+INTECS Opensource is open for all the undergraduates of the Faculty of Information Technology, University of Moratuwa.
+All the participants should adhere to professional conduct and contribute to creating a positive environment. Examples for such behaviour include:
