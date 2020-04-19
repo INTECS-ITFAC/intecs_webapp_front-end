@@ -5,7 +5,7 @@
 People with enthusiasm to contribute to open source projects to gain knowledge and experience are welcome. 
 (Read the “How to Contribute” section thoroughly before joining the project and post any inquiries regarding the above in the gitter community). Also please go through code of conduct section as well.
 
-Join Gitter Community [Here](https://github.com/facebook/create-react-app)
+Join Gitter Community [Here](https://gitter.im/INTECS-ITFAC/community)
 
 ## Expectations :-
 Before we get started, here are a few things we expect from you
@@ -33,13 +33,17 @@ If you would like to contribute, start by searching through the issues. After pi
 
 ## Rules :-
 
-_will be added_
+- If the participant who commented to reserve the issue does not update anything about the tasks within 3 days time on the slack channel or GitHub, the mentor of the particular project has the sole right to open the issue for the others by commenting on that issue.
+
+- The mentor of a particular issue is possessing the sole right of accepting or rejecting a pull request. 
 
 ## Style Guide :-
 
-_will be added_
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+- Use the common classes available in the main style sheet as much as possible.
+- If there are CSS which are unique to your task, please add them to the CSS file.
+- Take a screenshot of the final appearance of your task and post it on the community forum to get the approval from the mentor before putting a pull request.
 
 ## Available Scripts :-
 
@@ -101,4 +105,6 @@ This Code of Conduct extends both inside project spaces as well as in public spa
 
 ## Enforcement 
 
- _will be added_
+Instances of abusive, harassing, or otherwise, unacceptable behaviour may be reported by contact INTECS by mail [here](intecs@gmail.com) , which is a shared team inbox. If the incident involves someone who receives that shared inbox, you can also contact an individual maintainer.
+
+Project contributors who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by the organizers.
