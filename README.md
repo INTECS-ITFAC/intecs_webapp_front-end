@@ -42,7 +42,7 @@ If you would like to contribute, start by searching through the issues. After pi
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 - Use Bootstrap 4.
-- If you use any third party libraries for get component styles please get approvel from project mentors at community chat.
+- If you use any third party libraries for component styles please get approvel from project mentors at community chat.
 - Use the common classes available in the main style sheet as much as possible.
 - If there are CSS which are unique to your task, please add them to the CSS file.
 - Take a screenshot of the final appearance of your task and post it on the community forum to get the approval from the mentor before putting a pull request.
