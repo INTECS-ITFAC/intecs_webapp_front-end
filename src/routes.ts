@@ -5,6 +5,12 @@ import Views from "./modules";
 
 const routes = [
   {
+    path: "/contributes",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.contributesView,
+  },
+  {
     path: "/events",
     layout: DefaultLayout,
     exact: true,
