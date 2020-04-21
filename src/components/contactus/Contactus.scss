@@ -1,4 +1,26 @@
 .contact-us-container {
-  background-color: #d7ccc8;
-  height: 400px;
+  background-color: green;
+  height: 200px;
+  max-height: 200px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Arial Nova", sans-serif;
+  font-size: 30px;
+}
+
+Col {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
