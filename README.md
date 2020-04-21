@@ -23,7 +23,7 @@ Before we get started, here are a few things we expect from you
 
 If you would like to contribute, start by searching through the issues. After picking one,  please check whether someone else has already started working on the issue. If you get interested. Please follow the succeeding steps to make your contribution
 
-1. Join the slack channel which is mentioned in the project.
+1. Join the gitter community which is mentioned in the project.
 2. Add a comment on the selected issue to reserve it for yourself. 
 3. To know further details regarding a certain issue, you are facilitated to discuss with the mentor who is assigned to that issue through the slack channel.
 4. Fork the project to your personal account.
@@ -41,6 +41,8 @@ If you would like to contribute, start by searching through the issues. After pi
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+- Use Bootstrap 4.
+- If you use any third party libraries for component styles please get approvel from project mentors at community chat.
 - Use the common classes available in the main style sheet as much as possible.
 - If there are CSS which are unique to your task, please add them to the CSS file.
 - Take a screenshot of the final appearance of your task and post it on the community forum to get the approval from the mentor before putting a pull request.
