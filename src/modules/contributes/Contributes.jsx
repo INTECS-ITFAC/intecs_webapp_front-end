@@ -23,7 +23,11 @@ export class Contributes extends Component {
         </div>
 
         <div class="btn btn-info">
-          <a href={"https://gitter.im/INTECS-ITFAC/community"} target="_blank">
+          <a
+            href={"https://gitter.im/INTECS-ITFAC/community"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Join Community
           </a>
         </div>
