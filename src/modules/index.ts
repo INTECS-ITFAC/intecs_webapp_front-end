@@ -4,6 +4,7 @@ import About from "./about/About";
 import Project from "./project/Project";
 import NotFoundPage from "./utilityPages/NotFoundPage";
 import CommingSoonPage from "./utilityPages/CommingSoonPage";
+import Contributes from "./contributes/Contributes";
 
 export default {
   HomeView: Home,
@@ -12,4 +13,5 @@ export default {
   ProjectView: Project,
   NotFoundView: NotFoundPage,
   CommingSoonView: CommingSoonPage,
+  contributesView: Contributes,
 };
