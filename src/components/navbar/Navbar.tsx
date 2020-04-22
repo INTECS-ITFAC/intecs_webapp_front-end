@@ -1,26 +1,35 @@
 import React from "react";
 //import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
+import Logo from "../../assets/images/intecs_logo.png";
 import "./Navbar.scss";
-function Navbar() {
+
+function NavbarComponent() {
   return (
-    <div className="nav-bar-container">
-      <Link to="/">
-        <div>Home</div>
-      </Link>
-      <Link to="/events">
-        <div>Events</div>
-      </Link>
-      <Link to="/projects">
-        <div>Projecs</div>
-      </Link>
-      <Link to="/about">
-        <div>About</div>
-      </Link>
-    </div>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand href="/">
+        <img
+          alt=""
+          src={Logo}
+          width="30"
+          height="30"
+          className="d-inline-block align-top"
+        />{" "}
+        Intecs
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/events">Events</Nav.Link>
+          <Nav.Link href="/projects">Projects</Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
-Navbar.propTypes = {};
+NavbarComponent.propTypes = {};
 
-export default Navbar;
+export default NavbarComponent;

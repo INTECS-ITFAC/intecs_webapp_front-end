@@ -1,0 +1,25 @@
+.about-us-container {
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+}
+
+.leftColumn {
+  border-left: 1px #282c34;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  text-align: center;
+  font-size: x-large;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
