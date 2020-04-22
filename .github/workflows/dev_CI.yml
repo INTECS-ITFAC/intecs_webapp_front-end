@@ -35,7 +35,5 @@ jobs:
           git remote set-url origin https://${{secrets.PAT}}@github.com/INTECS-UoM/intecs_webapp_front-end.git
       - name: Deploy to GH-Pages
         run: npm run deploy
-        with:
-          github_token: ${{secrets.PAT}}
       - name: Updating Domain
         run: echo "Update domain"
