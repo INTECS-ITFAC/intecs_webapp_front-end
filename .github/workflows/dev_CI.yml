@@ -5,13 +5,12 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ dev ]
+    branches: [dev]
   pull_request:
-    branches: [ dev ]
+    branches: [dev]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,13 +18,22 @@ jobs:
         node-version: [10.x, 12.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
-      env:
-        CI: true
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test
+        env:
+          CI: true
+      - name: Git global config
+        run: |
+          git config --global user.email ${{secrets.EMAIL}}
+          git config --global user.name ${{secrets.USERNAME}}
+          git remote set-url origin https://${{secrets.PAT}}@github.com/${{secrets.USERNAME}}/intecs_webapp_front-end.git
+      - name: Deploy to GH Pages
+        run: npm run deploy
+      - name: Updating Domain
+        run: echo "Update domain"
