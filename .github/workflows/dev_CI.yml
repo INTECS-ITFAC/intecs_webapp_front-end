@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --global user.email intecs@itfac.mrt.ac.lk
           git config --global user.name INTECS-UoM
-          git remote set-url origin https://1d342b2fc502955adba1559d4690b8ba5b989c11@github.com/INTECS-UoM/intecs_webapp_front-end.git
+          git remote set-url origin https://1d342b2fc502955adba1559d4690b8ba5b989c11@github.com/INTECS-ITFAC/intecs_webapp_front-end.git
       - name: Deploy to GH-Pages
         run: npm run deploy
       - name: Updating Domain
