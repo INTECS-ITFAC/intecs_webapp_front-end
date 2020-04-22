@@ -1,0 +1,65 @@
+$shadow: 0 13px 26px rgba(#000, 0.2), 0 3px 6px rgba(#000, 0.2);
+$purple-gradient: linear-gradient(to bottom right, #c90a6d, #ff48a0);
+$blue-gradient: linear-gradient(to bottom right, #5e5aec, #3f9efc);
+
+.contribute-card-div {
+  text-align: center;
+  min-width: 20%;
+}
+
+.contribute-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.profile {
+  .thumbnail {
+    width: 124px;
+    height: 124px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    border-radius: 100%;
+    box-shadow: $shadow;
+  }
+
+  .name {
+    color: #2d354a;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  h4 {
+    color: #080911;
+    font-size: 1em;
+    margin-top: 1.3em;
+    margin-bottom: 0.2em;
+  }
+
+  p {
+    color: #666b7d;
+    font-size: 12px;
+  }
+}
+
+.profile-button {
+  width: 100px;
+  height: 35px;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: $purple-gradient;
+  border: none;
+  border-radius: 70px;
+  box-shadow: 0 13px 26px rgba(#000, 0.16), 0 3px 6px rgba(#000, 0.16);
+  display: inline-block;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
