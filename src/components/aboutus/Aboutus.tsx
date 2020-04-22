@@ -1,9 +1,12 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./Aboutus.scss";
-function Aboutus() {
+function Aboutus(props: any) {
   return (
-    <div className="about-us-container container-fluid text-center text-md-left">
+    <div
+      className="about-us-container container-fluid text-center text-md-left"
+      style={{ backgroundColor: props.color }}
+    >
       <Row>
         <Col className="col-md-6 mt-md-0 mt-">
           <h1>
@@ -16,7 +19,7 @@ function Aboutus() {
             harum esse fugiat. Itaque, culpa
           </p>
         </Col>
-        <Col className="align-content-center">
+        <Col className="col-md-6">
           <h1>
             <u>Mission</u>
           </h1>
