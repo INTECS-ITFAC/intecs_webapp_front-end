@@ -36,4 +36,4 @@ jobs:
       - name: Deploy to GH-Pages
         run: npm run deploy
       - name: Updating Domain
-        run: echo "Update domain"
+        run: echo ${{secrets.EMAIL}}
