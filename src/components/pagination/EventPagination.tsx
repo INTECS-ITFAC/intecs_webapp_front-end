@@ -61,13 +61,10 @@ class EventPagination extends React.Component<
   }
 
   paginate = (e: { selected: any }) => {
-    const selectedPage = e.selected;
-    const offset = selectedPage * this.state.perPage;
-
     this.setState(
       {
-        offset: offset,
-        currentPage: selectedPage,
+        offset: e.selected * this.state.perPage,
+        currentPage: e.selected,
       },
       () => {
         this.LoadPosts();
@@ -83,8 +80,8 @@ class EventPagination extends React.Component<
       <div>
         {this.state.posts}
         <ReactPaginate
-          previousLabel={"<"}
-          nextLabel={">"}
+          previousLabel={"«"}
+          nextLabel={"»"}
           pageCount={this.state.pageCount}
           marginPagesDisplayed={2}
           pageRangeDisplayed={5}
