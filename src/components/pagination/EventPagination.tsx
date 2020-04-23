@@ -8,7 +8,7 @@ class EventPagination extends React.Component<
     offset: number;
     postsList: string[];
     perPage: number;
-    curr: number;
+    currentPage: number;
     pageCount: any;
     posts: any;
   }
@@ -34,7 +34,7 @@ class EventPagination extends React.Component<
         "Post14",
       ],
       perPage: 6,
-      curr: 0,
+      currentPage: 0,
       pageCount: null,
       posts: null,
     };
@@ -43,6 +43,7 @@ class EventPagination extends React.Component<
   }
 
   LoadPosts() {
+    //axios.get can be added here when service is defined
     const postsSlice = this.state.postsList.slice(
       this.state.offset,
       this.state.offset + this.state.perPage
@@ -66,7 +67,7 @@ class EventPagination extends React.Component<
     this.setState(
       {
         offset: offset,
-        curr: selectedPage,
+        currentPage: selectedPage,
       },
       () => {
         this.LoadPosts();
