@@ -8,7 +8,6 @@ class Heading extends Component {
     super();
     this.state = {
       name: "Blog",
-      bannerCss: { color: "white", fontSize: "50px", marginTop: "150px" },
     };
   }
 
@@ -20,7 +19,7 @@ class Heading extends Component {
           imageClass="App-logo"
           title={[
             <div>
-              <h1 className="jumbotron-fluid" style={this.state.bannerCss}>
+              <h1 className="jumbotron-fluid" id="text">
                 {this.state.name}
               </h1>
               <div>
