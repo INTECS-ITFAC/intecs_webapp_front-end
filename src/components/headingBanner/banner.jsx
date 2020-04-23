@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Banner from "react-js-banner";
-import "./banner.css";
+import "./banner.scss";
 import logo from "./logo/frog.png";
 
 class Heading extends Component {
