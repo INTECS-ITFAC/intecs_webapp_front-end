@@ -8,7 +8,6 @@ import SocialBar from "./SocialBar";
 import Switch from "./Switch";
 
 //Style imports
-import { Col, Row } from "react-bootstrap";
 import "./Footer.scss";
 
 class Footer extends React.Component<
@@ -40,73 +39,61 @@ class Footer extends React.Component<
       // Footer has been devided into two parts
 
       <div
-        className="footer-container container-fluid "
+        className="footer-container"
         style={{ backgroundColor: this.state.primaryColor }}
       >
-        {/*Part 1 - this will include dynamic content*/}
-        <Row className="d-flex justify-content-center text-center align-content-center">
+        {/*Footer-part I this will include the switch*/}
+        <div className="row w-100 align-items-center justify-content-center">
           <label>Contact Us</label>
-          <div className="switch-class">
-            <Switch
-              modeValue={this.state.mode}
-              onColor={this.state.secondaryColor}
-              handleToggle={this.switchMode}
+          <Switch
+            modeValue={this.state.mode}
+            onColor={this.state.secondaryColor}
+            handleToggle={this.switchMode}
+          />
+          <label>About Us</label>
+        </div>
+        {/*Footer-part II will include Content*/}
+        <div className="dynamic-footer row ">
+          {this.state.mode === "AboutUs" ? (
+            <Contactus color={this.state.primaryColor} />
+          ) : (
+            <Aboutus color={this.state.primaryColor} />
+          )}
+        </div>
+        {/*Footer-part III will include Social Bar and two logos*/}
+        <div className="w-100 ml-0 mr-0 justify-content-center d-flex flex-row row mt-1 pt-1">
+          <div className="col-2 justify-content-center pl-0 pr-0 text-center">
+            <img
+              id="uom"
+              src={require("../../assets/images/uom_logo.png")}
+              className="logoIcon"
+              alt="UOM"
             />
           </div>
-          <label>About Us</label>
-        </Row>
-        {this.state.mode === "AboutUs" ? (
-          <Contactus color={this.state.primaryColor} />
-        ) : (
-          <Aboutus color={this.state.primaryColor} />
-        )}
-        {/*Part 2 - this will include Social Bar and Text Content*/}
-        <div
-          className="footer-part2 container-fluid d-flex justify-content-center align-items-center"
-          style={{ backgroundColor: this.state.primaryColor }}
-        >
-          <SocialBar />
-        </div>
-
-        <div
-          className="bottom-footer-container d-inline"
-          style={{ backgroundColor: this.state.primaryColor }}
-        >
-          <Row
-            className="row-cols-3 d-flex justify-content-center"
-            style={{ backgroundColor: this.state.primaryColor }}
-          >
-            <Col className="d-flex justify-content-center col-md-2">
-              <img
-                id="uom"
-                src={require("../../assets/images/uom_logo.png")}
-                className="logoIcon"
-                alt="UOM"
-              />
-            </Col>
-            <Col className="d-flex justify-content-center align-content-center col-md-8 ">
+          <div className="col-8 pl-0 pr-0 d-flex flex-column justify-content-center align-items-center">
+            <SocialBar />
+            <div className="justify-content-center pl-0 pr-0 d-flex row">
               <p className="textClass">
                 Information Technology Society | University of Moratuwa
               </p>
-            </Col>
-            <Col className="d-flex justify-content-center col-md-2">
-              {" "}
-              <img
-                id="INTECS"
-                src={require("../../assets/images/intecs_logo.png")}
-                className="logoIcon"
-                alt="INTECS"
-              />
-            </Col>
-          </Row>
-          <Row
-            className="text-center"
-            style={{ background: this.state.primaryColor }}
-          >
-            <Col style={{ color: "#D3D3D3" }}>
-              Develop By : <Link to={"/contributes"}>Opensource Community</Link>{" "}
-            </Col>
-          </Row>
+            </div>
+          </div>
+          <div className="col-2 justify-content-center text-center pl-0 pr-0">
+            <img
+              id="INTECS"
+              src={require("../../assets/images/intecs_logo.png")}
+              className="logoIcon"
+              alt="INTECS"
+            />
+          </div>
+        </div>
+        <div
+          className="w-100 d-flex justify-content-center"
+          style={{ background: this.state.primaryColor }}
+        >
+          <p style={{ color: "#D3D3D3" }}>
+            Developed By : <Link to={"/contributes"}>Opensource Community</Link>{" "}
+          </p>
         </div>
       </div>
     );

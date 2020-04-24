@@ -1,8 +1,5 @@
 import React from "react";
-
-// import PropTypes from 'prop-types'
 import "./Contactus.scss";
-import { Col, Row } from "react-bootstrap";
 
 function Contactus(props: any) {
   //board details
@@ -29,26 +26,23 @@ function Contactus(props: any) {
 
   return (
     <div
-      className="contact-us-container container-fluid text-center text-md-left"
+      className="contact-us-container justify-content-center d-flex flex-row text-md-left row"
       style={{ backgroundColor: props.color }}
     >
-      <Row className="justify-content-center d-flex">
-        {boardDetails.map(function (profile) {
-          return (
-            <>
-              <Col className="col-md-4 mt-md-0 mt-3">
-                <h1>
-                  <u>{profile.post}</u>
-                </h1>
-                <p>{profile.name}</p>
-                <p>{profile.contactNum}</p>
-                <p>{profile.email}</p>
-              </Col>
-              <hr className="clearfix w-100 d-md-none pb-3" />
-            </>
-          );
-        })}
-      </Row>
+      {boardDetails.map(function (profile) {
+        return (
+          <>
+            <div className="h-100 col-lg-4 col-md-4 col-sm-6 d-flex flex-column">
+              <p className="header">
+                <u>{profile.post}</u>
+              </p>
+              <p>{profile.name}</p>
+              <p>{profile.contactNum}</p>
+              <p>{profile.email}</p>
+            </div>
+          </>
+        );
+      })}
     </div>
   );
 }

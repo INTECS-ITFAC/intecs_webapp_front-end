@@ -26,17 +26,13 @@ export default function SocialBar() {
       name: "youtube",
       url: "https://www.youtube.com",
     },
-    {
-      name: "dribble",
-      url: "https://dribbble.com",
-    },
   ];
 
   return (
-    <Row className="d-flex justify-content-center">
+    <div className="test w-100 pl-0 pr-0 ml-0  d-flex flex-row  p-1">
       {linkDetails.map(function (webIcon, i) {
         return (
-          <Col>
+          <div className="col-2 pl-0 pr-0 text-center d-flex justify-content-center">
             <SocialIcon
               className="socialIcon"
               fgColor={"#ffffff"}
@@ -44,9 +40,9 @@ export default function SocialBar() {
               style={{ height: 80, width: 80 }}
               url={webIcon.url}
             />
-          </Col>
+          </div>
         );
       })}
-    </Row>
+    </div>
   );
 }
