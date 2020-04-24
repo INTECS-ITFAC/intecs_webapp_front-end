@@ -24,7 +24,7 @@ jobs:
       script:
         - echo "CI/CD Starting for Development Pull Request"
         - jq ".homepage = \"$HOST_URL_PR/$TRAVIS_PULL_REQUEST\"" package.json > package_updated.json && mv package_updated.json package.json
-        - npm install
+        - npm install --production
         - npm run build
         # - mkdir build/$TRAVIS_PULL_REQUEST   
         # - git clone --depth=50 --branch=dev https://$GITHUB_PERSONAL_ACCESS_TOKEN:x-oauth-basic@github.com/INTECS-UoM/$PR_BUILD_REPO_NAME.git
