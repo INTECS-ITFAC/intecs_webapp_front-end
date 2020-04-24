@@ -15,14 +15,14 @@ export class Contributes extends Component {
   render() {
     return (
       <div className="contributes-container">
-        <div>contributes</div>
-        <div className="row">
+        <div>Contributes</div>
+        <div className="row contributes-card-row">
           {this.props.Contributes.data.map((user, i) => {
             return <ContributeCard data={user} />;
           })}
         </div>
 
-        <div class="btn btn-info">
+        <div className="btn btn-info">
           <a
             href={"https://gitter.im/INTECS-ITFAC/community"}
             target="_blank"

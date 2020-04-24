@@ -1,7 +1,7 @@
 import React from "react";
 //import PropTypes from "prop-types";
 import { Navbar, Nav } from "react-bootstrap";
-import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/intecs_logo.png";
 import "./Navbar.scss";
 
 function NavbarComponent() {
