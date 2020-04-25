@@ -1,8 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import "./Footer.scss";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 export default function SocialBar() {
   const linkDetails = [
@@ -29,10 +27,13 @@ export default function SocialBar() {
   ];
 
   return (
-    <div className="test w-100 pl-0 pr-0 ml-0  d-flex flex-row  p-1">
-      {linkDetails.map(function (webIcon, i) {
+    <div className="w-100 pl-0 pr-0 ml-0  d-flex flex-row  p-1 justify-content-around">
+      {linkDetails.map(function (webIcon, index) {
         return (
-          <div className="col-2 pl-0 pr-0 text-center d-flex justify-content-center">
+          <div
+            className="col-2 pl-0 pr-0 text-center d-flex justify-content-center"
+            key={index}
+          >
             <SocialIcon
               className="socialIcon"
               fgColor={"#ffffff"}

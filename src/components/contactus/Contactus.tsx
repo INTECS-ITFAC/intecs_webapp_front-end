@@ -29,18 +29,19 @@ function Contactus(props: any) {
       className="contact-us-container justify-content-center d-flex flex-row text-md-left row"
       style={{ backgroundColor: props.color }}
     >
-      {boardDetails.map(function (profile) {
+      {boardDetails.map(function (profile, index) {
         return (
-          <>
-            <div className="h-100 col-lg-4 col-md-4 col-sm-6 d-flex flex-column">
-              <p className="header">
-                <u>{profile.post}</u>
-              </p>
-              <p>{profile.name}</p>
-              <p>{profile.contactNum}</p>
-              <p>{profile.email}</p>
-            </div>
-          </>
+          <div
+            className="h-100 col-lg-4 col-md-4 col-sm-6 d-flex flex-column"
+            key={index}
+          >
+            <p className="header">
+              <u>{profile.post}</u>
+            </p>
+            <p>{profile.name}</p>
+            <p>{profile.contactNum}</p>
+            <p>{profile.email}</p>
+          </div>
         );
       })}
     </div>
