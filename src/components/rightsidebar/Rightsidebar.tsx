@@ -8,7 +8,7 @@ function RightNavBar() {
     <div>
       <Card className="right-sidebar mt-3">
         <Card.Body>
-          <img src={about} className="about" />
+          <img src={about} className="about" alt="About" />
           <h2>About</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
           odit doloremque ad dicta aut maiores tempora. Natus explicabo quam
