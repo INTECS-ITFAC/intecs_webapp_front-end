@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-// import PropTypes from 'prop-types'
 import "./Event.scss";
 import Heading from "../../components/headingBanner/banner";
 import EventPagination from "../../components/pagination/EventPagination";
+import { Row, Col, Container } from "react-bootstrap";
+import RightNavBar from "../../components/rightsidebar/Rightsidebar";
 
 export class Event extends Component {
   static propTypes = {};
@@ -13,8 +14,19 @@ export class Event extends Component {
         <div>
           <Heading />
         </div>
-        <div>Allocated Space for Event </div>
-        <EventPagination />
+        <Container fluid>
+          <Row>
+            <Col className="col-md-3" style={{ background: "#fff" }}>
+              <div>Allocated space for leftsidebar</div>
+            </Col>
+            <Col className="col-md-6 text-center">
+              <EventPagination />
+            </Col>
+            <Col className="col-md-3">
+              <RightNavBar />
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
