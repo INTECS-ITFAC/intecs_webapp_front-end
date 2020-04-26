@@ -1,4 +1,34 @@
 .latest-news-container {
-  background-color: #e8f5e9;
-  height: 500px;
+  background-color: white;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+#breaking {
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  padding: 5px;
+  background: #334677;
+  color: white;
+  position: relative;
+  box-shadow: 0px 0px 4px 0px #000000;
+  top: 50px;
+  left: 0;
+  z-index: 999;
+}
+#newsTicker {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 0px 4px 0px #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 998;
 }
