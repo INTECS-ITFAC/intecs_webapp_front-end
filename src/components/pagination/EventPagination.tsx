@@ -77,7 +77,7 @@ class EventPagination extends React.Component<
   }
   render() {
     return (
-      <div className={"text-center"}>
+      <div className="w-100 h-100 text-center">
         {this.state.posts}
         <ReactPaginate
           previousLabel={"«"}

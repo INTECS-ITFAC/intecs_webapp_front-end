@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+
+//Styling
 import "./Event.scss";
+
+//Components
 import Heading from "../../components/headingBanner/banner";
 import EventPagination from "../../components/pagination/EventPagination";
-import { Row, Col, Container } from "react-bootstrap";
-import RightNavBar from "../../components/rightsidebar/Rightsidebar";
+import RightSideBar from "../../components/sidebar/rightsidebar/Rightsidebar";
+import LeftSideBar from "../../components/sidebar/leftsidebar/LeftSideBar";
 
 export class Event extends Component {
   static propTypes = {};
@@ -11,22 +15,18 @@ export class Event extends Component {
   render() {
     return (
       <div className="event-container">
-        <div>
-          <Heading />
+        <Heading />
+        <div className="row w-100 ml-0 mr-0">
+          <div className="col-md-3  pl-1 pr-1 order-3 order-md-1">
+            <LeftSideBar />
+          </div>
+          <div className="col-md-6 order-1 order-md-2">
+            <EventPagination />
+          </div>
+          <div className="col-md-3 order-2 order-md-3">
+            <RightSideBar />
+          </div>
         </div>
-        <Container fluid>
-          <Row>
-            <Col className="col-md-3" style={{ background: "#fff" }}>
-              <div>Allocated space for leftsidebar</div>
-            </Col>
-            <Col className="col-md-6 text-center">
-              <EventPagination />
-            </Col>
-            <Col className="col-md-3">
-              <RightNavBar />
-            </Col>
-          </Row>
-        </Container>
       </div>
     );
   }

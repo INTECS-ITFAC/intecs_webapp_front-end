@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import "./Rightsidebar.scss";
 import about from "./about.png";
 
-function RightNavBar() {
+function RightSideBar() {
   return (
     <div>
       <Card className="right-sidebar mt-3">
@@ -33,4 +33,4 @@ function RightNavBar() {
   );
 }
 
-export default RightNavBar;
+export default RightSideBar;
