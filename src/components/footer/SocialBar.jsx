@@ -1,8 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import "./Footer.scss";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 export default function SocialBar() {
   const linkDetails = [
@@ -26,17 +24,16 @@ export default function SocialBar() {
       name: "youtube",
       url: "https://www.youtube.com",
     },
-    {
-      name: "dribble",
-      url: "https://dribbble.com",
-    },
   ];
 
   return (
-    <Row className="d-flex justify-content-center">
-      {linkDetails.map(function (webIcon, i) {
+    <div className="w-100 pl-0 pr-0 ml-0  d-flex flex-row  p-1 justify-content-around">
+      {linkDetails.map(function (webIcon, index) {
         return (
-          <Col>
+          <div
+            className="col-2 pl-0 pr-0 text-center d-flex justify-content-center"
+            key={index}
+          >
             <SocialIcon
               className="socialIcon"
               fgColor={"#ffffff"}
@@ -44,9 +41,9 @@ export default function SocialBar() {
               style={{ height: 80, width: 80 }}
               url={webIcon.url}
             />
-          </Col>
+          </div>
         );
       })}
-    </Row>
+    </div>
   );
 }
