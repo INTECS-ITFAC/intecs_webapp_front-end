@@ -77,7 +77,7 @@ class EventPagination extends React.Component<
   }
   render() {
     return (
-      <div>
+      <div className="w-100 h-100 text-center">
         {this.state.posts}
         <ReactPaginate
           previousLabel={"«"}
@@ -86,7 +86,7 @@ class EventPagination extends React.Component<
           marginPagesDisplayed={2}
           pageRangeDisplayed={5}
           onPageChange={this.paginate}
-          containerClassName={"pagination"}
+          containerClassName={"pagination justify-content-center"}
           pageClassName={"page-item"}
           pageLinkClassName={"page-link"}
           previousClassName={"page-item"}

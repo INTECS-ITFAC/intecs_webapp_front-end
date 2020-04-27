@@ -1,0 +1,23 @@
+{
+  "projects": {
+    "default": "intecs-webapp"
+  },
+  "targets": {
+    "intecs-webapp": {
+      "hosting": {
+        "intecs-pr": [
+          "intecs-pr"
+        ],
+        "intecs-dev": [
+          "intecs-dev"
+        ],
+        "intecs-staging": [
+          "intecs-staging"
+        ],
+        "intecs-prod": [
+          "intecs-prod"
+        ]
+      }
+    }
+  }
+}
