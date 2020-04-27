@@ -81,21 +81,16 @@
   text-align: right;
   padding: 10px;
 
-  a {
-    color: blue;
-  }
-
-  a:hover {
-    color: blue;
-    cursor: pointer;
-  }
-
   button {
+    color: blue;
     border: none;
     background-color: inherit;
-    padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
+  }
+
+  button:focus {
+    outline: none;
   }
 }

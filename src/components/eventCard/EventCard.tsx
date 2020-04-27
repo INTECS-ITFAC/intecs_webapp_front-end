@@ -35,7 +35,7 @@ export default function EventCard({ event }) {
           render={() => <div className="app__content">{event.description}</div>}
         />
         <div className="toggle">
-          <a onClick={toggle}>{isOpen ? "Show Less" : "Show More"}</a>
+          <button onClick={toggle}>{isOpen ? "Show Less" : "Show More"}</button>
         </div>
       </div>
     </div>
