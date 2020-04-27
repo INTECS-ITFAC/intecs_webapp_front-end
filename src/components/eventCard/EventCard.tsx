@@ -33,7 +33,7 @@ export default function EventCard({ event }) {
             (isOpen ? "app__collapse--active" : "")
           }
           render={() => <div className="app__content">{event.description}</div>}
-        ></Collapsible>
+        />
         <div className="toggle">
           <a onClick={toggle}>{isOpen ? "Show Less" : "Show More"}</a>
         </div>
