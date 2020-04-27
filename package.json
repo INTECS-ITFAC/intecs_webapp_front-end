@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@kunukn/react-collapse": "^2.2.8",
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.32",
     "@types/react": "^16.9.26",

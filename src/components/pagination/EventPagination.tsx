@@ -1,12 +1,13 @@
 import React from "react";
 import "./EventPagination.scss";
 import ReactPaginate from "react-paginate";
+import EventCard from "../eventCard/EventCard";
 
 class EventPagination extends React.Component<
   {},
   {
     offset: number;
-    postsList: string[];
+    postsList: any[];
     perPage: number;
     currentPage: number;
     pageCount: any;
@@ -18,20 +19,41 @@ class EventPagination extends React.Component<
     this.state = {
       offset: 0,
       postsList: [
-        "Post1",
-        "Post2",
-        "Post3",
-        "Post4",
-        "Post5",
-        "Post6",
-        "Post7",
-        "Post8",
-        "Post9",
-        "Post10",
-        "Post11",
-        "Post12",
-        "Post13",
-        "Post14",
+        {
+          id: 1,
+          title: "Post Title 1",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odit doloremque ad dicta " +
+            "aut maiores tempora. Natus explicabo quam reprehenderit nam nihil dignissimos? Fugit nemo temporibus, " +
+            "eos dolores, odit sunt, a aut dolor tenetur totam velit incidunt mollitia explicabo inventore? Unde " +
+            "minima tenetur vitae quos eveniet facilis repudiandae doloribus nisi?",
+          imgUrl: require("../../assets/images/events/event1.png"),
+          date: "12/05/2020",
+        },
+        {
+          id: 2,
+          title: "Post Title 2",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odit doloremque ad dicta " +
+            "aut maiores tempora. Natus explicabo quam reprehenderit nam nihil dignissimos? Fugit nemo temporibus, " +
+            "eos dolores, odit sunt, a aut dolor tenetur totam velit incidunt mollitia explicabo inventore? Unde " +
+            "minima tenetur vitae quos eveniet facilis repudiandae doloribus nisi? eos dolores, odit sunt, a aut dolor " +
+            "tenetur totam velit incidunt mollitia explicabo inventore? Unde. eos dolores, odit sunt, a aut dolor " +
+            "tenetur totam velit incidunt mollitia explicabo inventore? Unde ",
+          imgUrl: require("../../assets/images/events/event2.jpg"),
+          date: "12/06/2020",
+        },
+        {
+          id: 3,
+          title: "Post Title 3",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odit doloremque ad dicta " +
+            "aut maiores tempora. Natus explicabo quam reprehenderit nam nihil dignissimos? Fugit nemo temporibus, " +
+            "eos dolores, odit sunt, a aut dolor tenetur totam velit incidunt mollitia explicabo inventore? Unde " +
+            "minima tenetur vitae quos eveniet facilis repudiandae doloribus nisi?",
+          imgUrl: require("../../assets/images/events/event1.png"),
+          date: "20/05/2020",
+        },
       ],
       perPage: 6,
       currentPage: 0,
@@ -50,7 +72,7 @@ class EventPagination extends React.Component<
     );
     const post = postsSlice.map((p) => (
       <React.Fragment>
-        {p}
+        <EventCard event={p} />
         <br />
       </React.Fragment>
     ));
@@ -75,6 +97,7 @@ class EventPagination extends React.Component<
   componentDidMount() {
     this.LoadPosts();
   }
+
   render() {
     return (
       <div className="w-100 h-100 text-center">
