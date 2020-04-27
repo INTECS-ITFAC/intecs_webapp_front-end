@@ -2,16 +2,17 @@ import React from "react";
 import "./EventPagination.scss";
 import ReactPaginate from "react-paginate";
 import EventCard from "../eventCard/EventCard";
+import { PostSchema } from "./Interfaces";
 
 class EventPagination extends React.Component<
   {},
   {
     offset: number;
-    postsList: any[];
+    postsList: PostSchema[];
     perPage: number;
     currentPage: number;
-    pageCount: any;
-    posts: any;
+    pageCount: number;
+    posts: JSX.Element[];
   }
 > {
   constructor(props: any) {
@@ -57,8 +58,8 @@ class EventPagination extends React.Component<
       ],
       perPage: 6,
       currentPage: 0,
-      pageCount: null,
-      posts: null,
+      pageCount: 0,
+      posts: [],
     };
 
     this.paginate = this.paginate.bind(this);
