@@ -1,29 +1,43 @@
 import React from "react";
-//import PropTypes from "prop-types";
 import { Navbar, Nav } from "react-bootstrap";
-import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/intecs_logo.png";
 import "./Navbar.scss";
 
 function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      className="nav-bar"
+      fixed="top"
+    >
       <Navbar.Brand href="/">
-        <img
-          alt=""
-          src={Logo}
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-        />{" "}
-        Intecs
+        <div className="row align-items-center brand-div">
+          <img
+            alt="logo"
+            src={Logo}
+            className="d-inline-block align-top brand-img"
+          />
+          Information Technology Society <br />
+          University of Moratuwa
+        </div>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/events">Events</Nav.Link>
-          <Nav.Link href="/projects">Projects</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
+          <div className="link-div">
+            <Nav.Link href="/">Home</Nav.Link>
+          </div>
+          <div className="link-div">
+            <Nav.Link href="/events">Events</Nav.Link>
+          </div>
+          <div className="link-div">
+            <Nav.Link href="/projects">Projects</Nav.Link>
+          </div>
+          <div className="link-div">
+            <Nav.Link href="/about">About</Nav.Link>
+          </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,3 +1,62 @@
-.nav-bar-container {
-  background-color: #e0e0e0;
+.nav-bar {
+  opacity: 0.8;
+}
+
+.brand-div {
+  margin: auto;
+  text-align: center;
+  font-size: 60%;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 576px) {
+  .brand-div {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .brand-div {
+    font-size: 100%;
+  }
+}
+
+.brand-img {
+  height: 30px;
+  width: 30px;
+}
+
+@media only screen and (min-width: 576px) {
+  .brand-img {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .brand-img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.link-div {
+  background-color: black;
+  border-radius: 10px;
+  font-size: 70%;
+  font-weight: bold;
+  text-align: left;
+  padding: 0 10px;
+  margin: 4px 10px;
+}
+
+.link-div:hover {
+  background-color: darkred;
+}
+
+@media only screen and (min-width: 992px) {
+  .link-div {
+    width: 100px;
+    font-size: 100%;
+    text-align: center;
+  }
 }

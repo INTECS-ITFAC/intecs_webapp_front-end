@@ -1,4 +1,69 @@
+$break-small: 600px;
+$break-large: 1000px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) {
+      @content;
+    }
+  } @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
+      @content;
+    }
+  } @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) {
+      @content;
+    }
+  }
+}
+
 .contact-us-container {
-  background-color: #d7ccc8;
-  height: 400px;
+  position: absolute;
+  width: 100%;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: white;
+  font-family: "Arial Nova", sans-serif;
+
+  @include respond-to(handhelds) {
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: inherit;
+    flex-direction: row;
+  }
+  @include respond-to(medium-screens) {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 10px;
+  }
+  @include respond-to(wide-screens) {
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Agency FB", sans-serif;
+  justify-content: center;
+  color: white;
+  align-content: center;
+  @include respond-to(handhelds) {
+    font-size: 15px;
+  }
+  @include respond-to(medium-screens) {
+    font-size: 20px;
+  }
+  @include respond-to(wide-screens) {
+    font-size: 30px;
+  }
 }
