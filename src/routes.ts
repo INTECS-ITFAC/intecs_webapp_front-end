@@ -10,25 +10,25 @@ const routes = [
     path: "/dashboard/newsManagement",
     layout: DashboardLayout,
     exact: true,
-    component: Views.DashboardView,
+    component: Views.NewsManagementView,
   },
   {
     path: "/dashboard/eventManagement",
     layout: DashboardLayout,
     exact: true,
-    component: Views.DashboardView,
+    component: Views.EventManagementView,
   },
   {
     path: "/dashboard/eventFlowManagement",
     layout: DashboardLayout,
     exact: true,
-    component: Views.DashboardView,
+    component: Views.EventManagementView,
   },
   {
     path: "/dashboard/projectManagement",
     layout: DashboardLayout,
     exact: true,
-    component: Views.DashboardView,
+    component: Views.ProjectManagementView,
   },
 
   {
