@@ -5,6 +5,12 @@ import Views from "./modules";
 
 const routes = [
   {
+    path: "/dashboard",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.DashboardView,
+  },
+  {
     path: "/contributes",
     layout: DefaultLayout,
     exact: true,
