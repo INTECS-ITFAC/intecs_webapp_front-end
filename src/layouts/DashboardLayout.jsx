@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
 import DashboardSidebar from "../components/sidebar/dashboardSidebar/DashboardSidebar";
 
 const DashboardLayout = (ViewComponent) => {

@@ -7,6 +7,31 @@ import Views from "./modules";
 
 const routes = [
   {
+    path: "/dashboard/newsManagement",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.DashboardView,
+  },
+  {
+    path: "/dashboard/eventManagement",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.DashboardView,
+  },
+  {
+    path: "/dashboard/eventFlowManagement",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.DashboardView,
+  },
+  {
+    path: "/dashboard/projectManagement",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.DashboardView,
+  },
+
+  {
     path: "/dashboard",
     layout: DashboardLayout,
     exact: true,
