@@ -23,7 +23,7 @@ const routes = [
     path: "/dashboard/eventFlowManagement",
     layout: DashboardLayout,
     exact: true,
-    component: Views.EventManagementView,
+    component: Views.EventFloorManagementView,
   },
   {
     path: "/dashboard/projectManagement",
