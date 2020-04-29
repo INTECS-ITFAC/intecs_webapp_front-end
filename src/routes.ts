@@ -1,6 +1,7 @@
 // layouts
 import DefaultLayout from "./layouts/DefaultLayout";
 import DashboardLayout from "./layouts/DashboardLayout";
+import LoginLayout from "./layouts/LoginLayout";
 
 // views
 import Views from "./modules";
@@ -39,7 +40,7 @@ const routes = [
   },
   {
     path: "/login",
-    layout: DefaultLayout,
+    layout: LoginLayout,
     exact: true,
     component: Views.LoginView,
   },
