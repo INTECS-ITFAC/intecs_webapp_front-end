@@ -10,6 +10,7 @@ import EvenetFloorManagement from "./dashbaord/eventFlowManagement/EventFlowMana
 import EvenetManagement from "./dashbaord/eventManagement/EventManagement";
 import NewsManagement from "./dashbaord/newsManagement/NewsManagement";
 import ProjectManagement from "./dashbaord/projectManagement/ProjectManagement";
+import Login from "./auth/login/Login";
 
 export default {
   HomeView: Home,
@@ -24,4 +25,5 @@ export default {
   EventManagementView: EvenetManagement,
   NewsManagementView: NewsManagement,
   ProjectManagementView: ProjectManagement,
+  LoginView: Login,
 };

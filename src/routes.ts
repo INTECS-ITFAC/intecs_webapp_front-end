@@ -38,6 +38,12 @@ const routes = [
     component: Views.DashboardView,
   },
   {
+    path: "/login",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.LoginView,
+  },
+  {
     path: "/contributes",
     layout: DefaultLayout,
     exact: true,
