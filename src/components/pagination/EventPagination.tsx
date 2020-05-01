@@ -1,16 +1,18 @@
 import React from "react";
 import "./EventPagination.scss";
 import ReactPaginate from "react-paginate";
+import EventCard from "../eventCard/EventCard";
+import { PostSchema } from "./Interfaces";
 
 class EventPagination extends React.Component<
   {},
   {
     offset: number;
-    postsList: string[];
+    postsList: PostSchema[];
     perPage: number;
     currentPage: number;
-    pageCount: any;
-    posts: any;
+    pageCount: number;
+    posts: JSX.Element[];
   }
 > {
   constructor(props: any) {
@@ -18,25 +20,46 @@ class EventPagination extends React.Component<
     this.state = {
       offset: 0,
       postsList: [
-        "Post1",
-        "Post2",
-        "Post3",
-        "Post4",
-        "Post5",
-        "Post6",
-        "Post7",
-        "Post8",
-        "Post9",
-        "Post10",
-        "Post11",
-        "Post12",
-        "Post13",
-        "Post14",
+        {
+          id: 1,
+          title: "Post Title 1",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odit doloremque ad dicta " +
+            "aut maiores tempora. Natus explicabo quam reprehenderit nam nihil dignissimos? Fugit nemo temporibus, " +
+            "eos dolores, odit sunt, a aut dolor tenetur totam velit incidunt mollitia explicabo inventore? Unde " +
+            "minima tenetur vitae quos eveniet facilis repudiandae doloribus nisi?",
+          imgUrl: require("../../assets/images/events/event1.png"),
+          date: "12/05/2020",
+        },
+        {
+          id: 2,
+          title: "Post Title 2",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odit doloremque ad dicta " +
+            "aut maiores tempora. Natus explicabo quam reprehenderit nam nihil dignissimos? Fugit nemo temporibus, " +
+            "eos dolores, odit sunt, a aut dolor tenetur totam velit incidunt mollitia explicabo inventore? Unde " +
+            "minima tenetur vitae quos eveniet facilis repudiandae doloribus nisi? eos dolores, odit sunt, a aut dolor " +
+            "tenetur totam velit incidunt mollitia explicabo inventore? Unde. eos dolores, odit sunt, a aut dolor " +
+            "tenetur totam velit incidunt mollitia explicabo inventore? Unde ",
+          imgUrl: require("../../assets/images/events/event2.jpg"),
+          date: "12/06/2020",
+        },
+        {
+          id: 3,
+          title: "Post Title 3",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odit doloremque ad dicta " +
+            "aut maiores tempora. Natus explicabo quam reprehenderit nam nihil dignissimos? Fugit nemo temporibus, " +
+            "eos dolores, odit sunt, a aut dolor tenetur totam velit incidunt mollitia explicabo inventore? Unde " +
+            "minima tenetur vitae quos eveniet facilis repudiandae doloribus nisi?",
+          imgUrl: require("../../assets/images/events/event1.png"),
+          date: "20/05/2020",
+        },
       ],
       perPage: 6,
       currentPage: 0,
-      pageCount: null,
-      posts: null,
+      pageCount: 0,
+      posts: [],
     };
 
     this.paginate = this.paginate.bind(this);
@@ -50,7 +73,7 @@ class EventPagination extends React.Component<
     );
     const post = postsSlice.map((p) => (
       <React.Fragment>
-        {p}
+        <EventCard event={p} />
         <br />
       </React.Fragment>
     ));
@@ -75,9 +98,10 @@ class EventPagination extends React.Component<
   componentDidMount() {
     this.LoadPosts();
   }
+
   render() {
     return (
-      <div>
+      <div className="w-100 h-100 text-center">
         {this.state.posts}
         <ReactPaginate
           previousLabel={"«"}
@@ -86,7 +110,7 @@ class EventPagination extends React.Component<
           marginPagesDisplayed={2}
           pageRangeDisplayed={5}
           onPageChange={this.paginate}
-          containerClassName={"pagination"}
+          containerClassName={"pagination justify-content-center"}
           pageClassName={"page-item"}
           pageLinkClassName={"page-link"}
           previousClassName={"page-item"}
