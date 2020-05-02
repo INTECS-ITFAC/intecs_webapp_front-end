@@ -1,23 +1,22 @@
 .banner {
   background-image: url("./logo/banner.jpg");
-  width: auto;
-  height: auto;
+  background-size: auto;
+  background-position: center;
+  height: 256px;
   text-align: center;
-  padding: 10px 10px;
   margin-bottom: 50px;
-  padding-left: 200px;
 }
 
-#text {
+.banner h1 {
   color: white;
-  font-size: 50px;
-  margin-top: 150px;
+  font-weight: bold;
 }
 
-.App-logo {
+.banner h5 {
+  color: white;
+}
+
+.logo {
   width: 150px;
   height: 150px;
-  margin-bottom: 150px;
-  align-content: center;
-  margin-right: -327px;
 }
