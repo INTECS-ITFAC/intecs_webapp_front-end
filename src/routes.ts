@@ -69,6 +69,30 @@ const routes = [
     component: Views.ProjectView,
   },
   {
+    path: "/linkIT",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.LinkITView,
+  },
+  {
+    path: "/INTECSOpenSourceProjects",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.IntecsOpenSourceProjectsView,
+  },
+  {
+    path: "/studentsWork",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.StudentsWorkView,
+  },
+  {
+    path: "/gallery",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.GalleryView,
+  },
+  {
     path: "/",
     layout: DefaultLayout,
     exact: true,

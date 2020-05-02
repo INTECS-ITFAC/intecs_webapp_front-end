@@ -11,6 +11,11 @@ import EvenetManagement from "./dashbaord/eventManagement/EventManagement";
 import NewsManagement from "./dashbaord/newsManagement/NewsManagement";
 import ProjectManagement from "./dashbaord/projectManagement/ProjectManagement";
 import Login from "./auth/login/Login";
+import LinkIT from "./project/LinkIT/LinkIT";
+import IntecsOpenSourceProjects from "./project/IntecsOpenSource/IntecsOpenSourceProjects";
+import StudentsWork from "./project/StudentsWork/StudentsWork";
+import Gallery from "./gallery/Gallery";
+
 
 export default {
   HomeView: Home,
@@ -26,4 +31,8 @@ export default {
   NewsManagementView: NewsManagement,
   ProjectManagementView: ProjectManagement,
   LoginView: Login,
+  LinkITView: LinkIT,
+  IntecsOpenSourceProjectsView: IntecsOpenSourceProjects,
+  StudentsWorkView: StudentsWork,
+  GalleryView: Gallery,
 };

@@ -1,5 +1,6 @@
 .nav-bar {
   opacity: 0.8;
+  display: flex;
 }
 
 .brand-div {
@@ -42,7 +43,6 @@
 .link-div {
   background-color: black;
   border-radius: 10px;
-  font-size: 70%;
   font-weight: bold;
   text-align: left;
   padding: 0 10px;
@@ -59,4 +59,45 @@
     font-size: 100%;
     text-align: center;
   }
+}
+
+.dropdown {
+  float: left;
+  background-color: black;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: left;
+  padding: 0 10px;
+  margin: 4px 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 5;
+}
+
+.dropdown-content a {
+  color: rgb(250, 248, 248);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(8, 8, 8);
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.dropdown:hover {
+  background-color: darkred;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
