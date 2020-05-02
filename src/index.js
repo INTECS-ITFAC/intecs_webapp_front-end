@@ -9,6 +9,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import reducers from "./reducers";
 import services from "./services";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 
 // Create redux-logic middleware
 const logicMiddleware = createLogicMiddleware(services, {});
@@ -26,6 +27,10 @@ let store = createStore(reducers, enhancer);
 ReactDOM.render(
   <Provider store={store}>
     <App />
+    <MessengerCustomerChat
+      pageId="10150156747435257"
+      appId="2553724194886470"
+    />
   </Provider>,
   document.getElementById("root")
 );
