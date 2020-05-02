@@ -3,12 +3,7 @@
     {
       "site": "intecs-prod",
       "public": "build",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**",
-        ".travis.yml"
-      ],
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**", ".travis.yml"],
       "rewrites": [
         {
           "source": "**",
@@ -19,12 +14,7 @@
     {
       "site": "intecs-staging",
       "public": "build",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**",
-        ".travis.yml"
-      ],
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**", ".travis.yml"],
       "rewrites": [
         {
           "source": "**",
@@ -35,12 +25,7 @@
     {
       "site": "intecs-dev",
       "public": "build",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**",
-        ".travis.yml"
-      ],
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**", ".travis.yml"],
       "rewrites": [
         {
           "source": "**",
@@ -51,12 +36,7 @@
     {
       "site": "intecs-pr",
       "public": "build",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**",
-        ".travis.yml"
-      ],
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**", ".travis.yml"],
       "rewrites": [
         {
           "source": "**",
