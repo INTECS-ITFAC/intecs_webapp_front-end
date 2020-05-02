@@ -17,13 +17,13 @@ export class Event extends Component {
       <div className="event-container">
         <Heading />
         <div className="row w-100 ml-0 mr-0">
-          <div className="col-md-3  pl-1 pr-1 order-3 order-md-1">
+          <div className="col-md-3 pl-1 pr-1 order-3 order-md-1">
             <LeftSideBar />
           </div>
-          <div className="col-md-6 order-1 order-md-2">
+          <div className="col-md-9 col-lg-6 order-1 order-md-2">
             <EventPagination />
           </div>
-          <div className="col-md-3 order-2 order-md-3">
+          <div className="col-lg-3 order-2 order-md-3">
             <RightSideBar />
           </div>
         </div>
