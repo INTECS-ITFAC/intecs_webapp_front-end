@@ -13,9 +13,7 @@ function Footer() {
 
   return (
     <div className="footer-container" style={{ backgroundColor: primaryColor }}>
-      <div className="dynamic-footer row ">
-        <ContactUs />
-      </div>
+      <ContactUs />
 
       <div className="w-100 ml-0 mr-0 justify-content-center d-flex flex-row row mt-1 pt-1">
         <div className="col-2 justify-content-center pl-0 pr-0 text-center">
