@@ -45,6 +45,9 @@ function NavbarComponent() {
           <div className="link-div">
             <Nav.Link href="/gallery">Gallery</Nav.Link>
           </div>
+          <div className="link-div">
+            <Nav.Link href="/about">About Us</Nav.Link>
+          </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
