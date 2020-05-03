@@ -17,9 +17,15 @@ $break-large: 1000px;
   }
 }
 
-.contact-us-container {
-  position: absolute;
+.contact-us {
+  color: white;
+  text-align: center;
   width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.contact-us h1 {
+  font-weight: bold;
 }
 
 p {
