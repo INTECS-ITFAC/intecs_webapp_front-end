@@ -11,18 +11,21 @@ function EventList() {
   const UpcomingEvents = [
     {
       title: "JAVA SCRIPT",
-      body: " User Experience, Visual Design",
+      body: " User Experience-Visual Design User Experience-Visual Design ",
     },
     {
       title: "WEB DEVELOPMENT",
-      body:
-        "Creative Direction, User Experience, Visual Design, SEO, Online Marketing",
+      body: "Visual Direction-User Experience User Experience-Visual Design",
     },
     {
       title: "JAVA SCRIPT",
-      body: " User Experience, Visual Design",
+      body: " User Experience, Visual Design User Experience-Visual Design",
     },
   ];
+
+  const currentEventTitle = "WEB DESIGNING";
+  const currentEventbody =
+    "Visual Direction-User Experience User Experience-Visual Design";
 
   return (
     <div className="event-list-container">
@@ -37,11 +40,13 @@ function EventList() {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           style={{ height: "70px" }}
         >
-          <h5 className="vertical-timeline-element-title">WEB DESIGNING</h5>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
+          <div className="element-content">
+            <h5 className="vertical-timeline-element-title">
+              {currentEventTitle}
+            </h5>
+            <br></br>
+            <div> {currentEventbody}</div>
+          </div>
         </VerticalTimelineElement>
 
         {/*Upcoming Events */}
@@ -52,8 +57,13 @@ function EventList() {
             iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
             style={{ height: "70px" }}
           >
-            <h5 className="vertical-timeline-element-subtitle">{key.title}</h5>
-            <p>{key.body}</p>
+            <div className="element-content">
+              <h5 className="vertical-timeline-element-subtitle">
+                {key.title}
+              </h5>
+              <br></br>
+              <div className="upcoming-events-body-text-color"> {key.body}</div>
+            </div>
           </VerticalTimelineElement>
         ))}
 

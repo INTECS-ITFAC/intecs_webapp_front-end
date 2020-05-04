@@ -1,6 +1,6 @@
 env:
   - NODEJS_VER=12.16.2
-  
+
 language: node_js
 node_js: $NODEJS_VER
 warnings_are_errors: true
@@ -26,7 +26,7 @@ jobs:
         - jq ".homepage = \"$HOST_URL_PR/$TRAVIS_PULL_REQUEST\"" package.json > package_updated.json && mv package_updated.json package.json
         - npm install --production
         - npm run build
-        # - mkdir build/$TRAVIS_PULL_REQUEST   
+        # - mkdir build/$TRAVIS_PULL_REQUEST
         # - git clone --depth=50 --branch=dev https://$GITHUB_PERSONAL_ACCESS_TOKEN:x-oauth-basic@github.com/INTECS-UoM/$PR_BUILD_REPO_NAME.git
         # - shopt -s dotglob
         # - rsync -a build/* $PR_BUILD_REPO_NAME/$TRAVIS_PULL_REQUEST/
