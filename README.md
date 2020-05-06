@@ -112,6 +112,6 @@ This Code of Conduct extends both inside project spaces as well as in public spa
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise, unacceptable behaviour may be reported by contact INTECS by mail [here](intecs@gmail.com) , which is a shared team inbox. If the incident involves someone who receives that shared inbox, you can also contact an individual maintainer.
+Instances of abusive, harassing, or otherwise, unacceptable behaviour may be reported by contact INTECS by mail [here](mailto:intecs@gmail.com) , which is a shared team inbox. If the incident involves someone who receives that shared inbox, you can also contact an individual maintainer.
 
 Project contributors who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by the organizers.
