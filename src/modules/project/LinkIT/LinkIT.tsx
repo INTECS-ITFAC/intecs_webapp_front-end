@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import PropTypes from 'prop-types'
 import StudentPostGrid from "../../../components/studentPostsGrid/PostGrid";
 import "./LinkIT.scss";
+import LinkItHeader from "../../../components/linkItHeader/LinkItHeader";
 
 export class LinkIT extends Component {
   static propTypes = {};
@@ -9,8 +10,8 @@ export class LinkIT extends Component {
   render() {
     return (
       <div className="linkIT-container">
-        <div className="mb-5">LinkIT Allocated Space</div>
-        <StudentPostGrid/>
+        <LinkItHeader />
+        <StudentPostGrid />
       </div>
     );
   }
