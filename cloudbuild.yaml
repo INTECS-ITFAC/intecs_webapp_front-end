@@ -7,10 +7,6 @@ steps:
   # Build
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
-    
-  # Checkout to ENV
-  - name: 'gcr.io/$PROJECT_ID/firebase'
-    args: ['use', '${_ENV}']
 
   # Deploy
   - name: 'gcr.io/$PROJECT_ID/firebase'
