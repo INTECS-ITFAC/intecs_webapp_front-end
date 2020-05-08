@@ -1,4 +1,3 @@
-  
 steps:
   # Install Node Modules
   - name: 'gcr.io/cloud-builders/npm'
