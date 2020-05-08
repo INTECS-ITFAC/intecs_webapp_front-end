@@ -5,7 +5,9 @@
 People with enthusiasm to contribute to open source projects to gain knowledge and experience are welcome.
 (Read the “How to Contribute” section thoroughly before joining the project and post any inquiries regarding the above in the gitter community). Also please go through code of conduct section as well.
 
-Join Gitter Community [Here](https://gitter.im/INTECS-ITFAC/community)
+Join Gitter Community
+
+[![Gitter](https://badges.gitter.im/INTECS-ITFAC/Intecs_WebApp_FrontEnd.svg)](https://gitter.im/INTECS-ITFAC/Intecs_WebApp_FrontEnd?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Expectations :-
 
