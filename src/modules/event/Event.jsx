@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+import { eventsActions } from "./ducks";
 
 //Styling
 import "./Event.scss";
@@ -32,4 +36,16 @@ export class Event extends Component {
   }
 }
 
-export default Event;
+// export default Event;
+function mapStateToProps(state) {
+  return {
+    Contributes: state.Contributes.contributes,
+  };
+}
+function mapDispatchToProps(dispatch) {
+  return {
+    eventsActions: bindActionCreators(eventsActions, dispatch),
+  };
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Event));
