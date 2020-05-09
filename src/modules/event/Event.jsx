@@ -21,6 +21,7 @@ export class Event extends Component {
   }
 
   render() {
+    const { allEvents } = this.props;
     return (
       <div className="event-container">
         <Heading />
@@ -29,7 +30,7 @@ export class Event extends Component {
             <LeftSideBar />
           </div>
           <div className="col-md-9 col-lg-6 order-1 order-md-2">
-            <EventPagination />
+            {allEvents.loading ? null : <EventPagination data={allEvents} />}
           </div>
           <div className="col-lg-3 order-2 order-md-3">
             <RightSideBar />
@@ -43,7 +44,7 @@ export class Event extends Component {
 // export default Event;
 function mapStateToProps(state) {
   return {
-    Contributes: state.Contributes.contributes,
+    allEvents: state.Events.allEvents,
   };
 }
 function mapDispatchToProps(dispatch) {
