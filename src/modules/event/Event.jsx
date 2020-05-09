@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+import { eventsActions } from "./ducks";
 
 //Styling
 import "./Event.scss";
@@ -12,7 +16,12 @@ import LeftSideBar from "../../components/sidebar/leftsidebar/LeftSideBar";
 export class Event extends Component {
   static propTypes = {};
 
+  componentDidMount() {
+    this.props.eventsActions.getAllEvents();
+  }
+
   render() {
+    const { allEvents } = this.props;
     return (
       <div className="event-container">
         <Heading />
@@ -21,7 +30,7 @@ export class Event extends Component {
             <LeftSideBar />
           </div>
           <div className="col-md-9 col-lg-6 order-1 order-md-2">
-            <EventPagination />
+            {allEvents.loading ? null : <EventPagination data={allEvents} />}
           </div>
           <div className="col-lg-3 order-2 order-md-3">
             <RightSideBar />
@@ -32,4 +41,16 @@ export class Event extends Component {
   }
 }
 
-export default Event;
+// export default Event;
+function mapStateToProps(state) {
+  return {
+    allEvents: state.Events.allEvents,
+  };
+}
+function mapDispatchToProps(dispatch) {
+  return {
+    eventsActions: bindActionCreators(eventsActions, dispatch),
+  };
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Event));
