@@ -1,7 +1,6 @@
 import React from "react";
 import "./headersw.scss";
 import he1 from "./logo/bgoverlay.png";
-//import he1 from "./logo/sworks.jpg";
 
 function Heading() {
   return (
