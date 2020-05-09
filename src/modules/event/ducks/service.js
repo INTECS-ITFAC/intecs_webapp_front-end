@@ -19,13 +19,13 @@ const getAllEvents = createLogic({
     }
     console.log("Running getAllEvents Service");
     HTTPClient.Get(endPoints.Get_all_events)
-      // .then((resp) => resp.data)
-      .then((resp) => {
-        console.log("product id type", resp);
-        dispatch(actions.getAllEventsSuccess(resp));
+      .then((resp) => resp.data)
+      .then((data) => {
+        console.log("getAllEvents data ", data);
+        dispatch(actions.getAllEventsSuccess(data));
       })
       .catch((err) => {
-        console.log("process -> err", err);
+        console.log("getAllEvents -> err", err);
         var errorMessage = "Failed to get regions";
         if (err && err.code === "ECONNABORTED") {
           errorMessage = "Please check your internet connection.";

@@ -16,6 +16,10 @@ import LeftSideBar from "../../components/sidebar/leftsidebar/LeftSideBar";
 export class Event extends Component {
   static propTypes = {};
 
+  componentDidMount() {
+    this.props.eventsActions.getAllEvents();
+  }
+
   render() {
     return (
       <div className="event-container">

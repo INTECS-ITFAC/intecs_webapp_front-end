@@ -2,7 +2,7 @@ import types from "./types";
 import { handleActions } from "redux-actions";
 
 const initialState = {
-  contributes: {
+  allEvents: {
     loading: true,
     pending: false,
     hasError: false,
@@ -14,28 +14,28 @@ const initialState = {
 // Reducers from redux-actions
 export default handleActions(
   {
-    [types.GET_CONTRIBUTES]: (state, { payload }) => ({
+    [types.GET_ALL_EVENTS]: (state, { payload }) => ({
       ...state,
-      contributes: {
-        ...state.contributes,
+      allEvents: {
+        ...state.allEvents,
         loading: true,
         pending: true,
       },
     }),
-    [types.GET_CONTRIBUTES_SUCCESS]: (state, { payload }) => ({
+    [types.GET_ALL_EVENTS_SUCCESS]: (state, { payload }) => ({
       ...state,
-      contributes: {
-        ...state.contributes,
+      allEvents: {
+        ...state.allEvents,
         loading: false,
         pending: false,
         data: payload,
       },
     }),
 
-    [types.GET_CONTRIBUTES_FAILED]: (state, { payload }) => ({
+    [types.GET_ALL_EVENTS_FAILED]: (state, { payload }) => ({
       ...state,
-      contributes: {
-        ...state.contributes,
+      allEvents: {
+        ...state.allEvents,
         loading: false,
         pending: false,
         hasError: true,
