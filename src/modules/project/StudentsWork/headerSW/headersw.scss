@@ -1,0 +1,37 @@
+.he {
+  background-image: url("./logo/sworks.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 60px;
+  position: relative;
+}
+
+.he1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1200px;
+  height: 250px;
+  opacity: 1;
+}
+
+.he h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.he h5 {
+  color: white;
+}
+
+.he button {
+  background-color: #4054b2;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  top: 100px;
+}
