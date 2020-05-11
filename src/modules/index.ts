@@ -15,7 +15,9 @@ import LinkIT from "./project/LinkIT/LinkIT";
 import IntecsOpenSourceProjects from "./project/IntecsOpenSource/IntecsOpenSourceProjects";
 import StudentsWork from "./project/StudentsWork/StudentsWork";
 import Gallery from "./gallery/Gallery";
-
+import AddStudentWork from "./dashbaord/addstudentWork/addStudentWork";
+import OpenSourceManagement from "./dashbaord/openSourceManagement/openSourceManagement";
+import DashboardLintIT from "./dashbaord/dashboardLinkIT/dashboardLintIT";
 
 export default {
   HomeView: Home,
@@ -30,6 +32,9 @@ export default {
   EventManagementView: EvenetManagement,
   NewsManagementView: NewsManagement,
   ProjectManagementView: ProjectManagement,
+  DashboardLinkITView: DashboardLintIT,
+  AddStudentWorkView: AddStudentWork,
+  OpenSourceManagementView: OpenSourceManagement,
   LoginView: Login,
   LinkITView: LinkIT,
   IntecsOpenSourceProjectsView: IntecsOpenSourceProjects,
