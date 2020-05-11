@@ -77,7 +77,7 @@ export class Login extends Component <
                             </Button>
                         </Link>
                         <p className="forgot-password ">
-                            <a href="#" rel="noopener noreferrer">Forgot password?</a>
+                            <Button href={"#"} variant="link">Forgot Password?</Button>
                         </p>
                     </div>
                 </div>
