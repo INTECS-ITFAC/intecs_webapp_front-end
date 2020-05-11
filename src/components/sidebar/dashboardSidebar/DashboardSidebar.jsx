@@ -1,38 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./DashboardSidebar.scss";
+import { withRouter } from "react-router";
+import { Nav } from "react-bootstrap";
 
-export default function DashboardSidebar() {
+function DashboardSidebar(props) {
   return (
     <div className="dashboard-sidebar-container">
-      <h1>Dashboard</h1>
-      <ul>
-        <li>user Avatar</li>
-        <li>Name</li>
-      </ul>
-
-      <React.Fragment>
-        <Link to={"/dashboard/newsManagement"}>
-          <li>
-            <a href="#/">{"News"}</a>
-          </li>
-        </Link>
-        <Link to={"/dashboard/eventManagement"}>
-          <li>
-            <a href="#/">{"Event"}</a>
-          </li>
-        </Link>
-        <Link to={"/dashboard/eventFlowManagement"}>
-          <li>
-            <a href="#/">{"Event Flow"}</a>
-          </li>
-        </Link>
-        <Link to={"/dashboard/projectManagement"}>
-          <li>
-            <a href="#/">{"Project"}</a>
-          </li>
-        </Link>
-      </React.Fragment>
+      <Nav
+        variant="pills"
+        className="flex-column"
+        activeKey={props.location.pathname}
+      >
+        <Nav.Link href="/dashboard/eventManagement">Event Management</Nav.Link>
+        <Nav.Link href="/dashboard/eventFlowManagement">
+          Flow Management
+        </Nav.Link>
+        <Nav.Link href="/dashboard/newsManagement">News Management</Nav.Link>
+        <Nav.Link href="/dashboard/linkIT">LinkIT</Nav.Link>
+        <Nav.Link href="/dashboard/addStudentWork">Add Student Work</Nav.Link>
+        <Nav.Link href="/dashboard/openSourceManagement">
+          Open Source Management
+        </Nav.Link>
+      </Nav>
     </div>
   );
 }
+
+const SideNavWithRouter = withRouter(DashboardSidebar);
+
+export default SideNavWithRouter;

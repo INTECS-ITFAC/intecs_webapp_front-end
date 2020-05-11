@@ -31,6 +31,24 @@ const routes = [
     exact: true,
     component: Views.ProjectManagementView,
   },
+  {
+    path: "/dashboard/linkIT",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.DashboardLinkITView,
+  },
+  {
+    path: "/dashboard/addStudentWork",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.AddStudentWorkView,
+  },
+  {
+    path: "/dashboard/openSourceManagement",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.OpenSourceManagementView,
+  },
 
   {
     path: "/dashboard",
