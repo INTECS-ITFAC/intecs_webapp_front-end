@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./EvenetManagement.scss";
+
 export class EvenetManagement extends Component {
   static propTypes = {};
 

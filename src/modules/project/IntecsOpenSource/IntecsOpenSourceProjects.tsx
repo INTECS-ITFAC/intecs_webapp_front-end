@@ -4,6 +4,7 @@ import "./IntecsOpenSourceProjects.scss";
 import pic1 from "../../../assets/images/IntecsOpenSourceProjects/ProjectPictures/project_1.jpg";
 import githubLogo from "../../../assets/images/IntecsOpenSourceProjects/github.png";
 import gitterLogo from "../../../assets/images/IntecsOpenSourceProjects/gitter.png";
+import OpenSourceProjectsHeader from "../../../components/openSourceProjectsHeader/openSourceProjectsHeader";
 
 const IntecsOpenSourceProjects = () => {
   const project_list = [
@@ -51,7 +52,7 @@ const IntecsOpenSourceProjects = () => {
 
   return (
     <div className="intecs-open-source-projects-container">
-      <div className="header-component-space">Header component goes here</div>
+      <div className="header-component-space"><OpenSourceProjectsHeader /></div>
       <div className="content-space-of-all-intecs-open-source-projects">
         {project_list.map((project_list, index) => {
           return (
@@ -131,7 +132,7 @@ const IntecsOpenSourceProjects = () => {
             </>
           );
         })}
-      </div>
+    </div>
     </div>
   );
 };

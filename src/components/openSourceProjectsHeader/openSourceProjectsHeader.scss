@@ -1,0 +1,25 @@
+.open-source-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../../../src/assets/images/openSourceProjectsHeader.jpg");
+  background-color: black;
+  background-size: auto;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+
+  h2 {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .open-source-header {
+    height: 400px;
+    padding-top: 140px;
+  }
+}
