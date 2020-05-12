@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/navbar/Navbar";
 import AdminNavBar from "../components/adminNavBar/AdminNavBar";
 import SideNavWithRouter from "../components/sidebar/dashboardSidebar/DashboardSidebar";
 
