@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/navbar/Navbar";
+import AdminNavBar from "../components/adminNavBar/AdminNavBar";
 import SideNavWithRouter from "../components/sidebar/dashboardSidebar/DashboardSidebar";
 
 const DashboardLayout = (ViewComponent) => {
@@ -8,7 +8,8 @@ const DashboardLayout = (ViewComponent) => {
       return (
         <>
           {/* <Import the nav bar> */}
-          <Navbar />
+          {/* <Navbar /> */}
+          <AdminNavBar />
           <div style={{ width: "100%", display: "flex", flexDirection: "row" }}>
             <SideNavWithRouter />
 
