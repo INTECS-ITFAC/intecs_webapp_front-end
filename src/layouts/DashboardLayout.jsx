@@ -11,6 +11,7 @@ const DashboardLayout = (ViewComponent) => {
           {/* <Import the nav bar> */}
           <Navbar />
           <AdminNavBar />
+          
           <div style={{ width: "100%", display: "flex", flexDirection: "row" }}>
             <SideNavWithRouter />
 
