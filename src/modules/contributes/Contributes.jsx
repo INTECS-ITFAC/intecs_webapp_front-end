@@ -20,7 +20,9 @@ export class Contributes extends Component {
           <div>Moderators</div>
           <div className="row contributes-card-row">
             {Moderators.map((user, i) => {
-              return <ContributeCard data={user} isContributes={false} />;
+              return (
+                <ContributeCard key={i} data={user} isContributes={false} />
+              );
             })}
           </div>
         </React.Fragment>
@@ -28,7 +30,9 @@ export class Contributes extends Component {
           <div>Contributes</div>
           <div className="row contributes-card-row">
             {this.props.Contributes.data.map((user, i) => {
-              return <ContributeCard data={user} isContributes={true} />;
+              return (
+                <ContributeCard key={i} data={user} isContributes={true} />
+              );
             })}
           </div>
         </React.Fragment>
@@ -36,7 +40,9 @@ export class Contributes extends Component {
           <div>QA Team</div>
           <div className="row contributes-card-row">
             {QATeam.map((user, i) => {
-              return <ContributeCard data={user} isContributes={false} />;
+              return (
+                <ContributeCard key={i} data={user} isContributes={false} />
+              );
             })}
           </div>
         </React.Fragment>
@@ -44,7 +50,9 @@ export class Contributes extends Component {
           <div>Design Team</div>
           <div className="row contributes-card-row">
             {DesignTeam.map((user, i) => {
-              return <ContributeCard data={user} isContributes={false} />;
+              return (
+                <ContributeCard key={i} data={user} isContributes={false} />
+              );
             })}
           </div>
         </React.Fragment>
