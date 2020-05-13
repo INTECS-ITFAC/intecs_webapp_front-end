@@ -155,7 +155,8 @@ export const QATeam = [
     url: "https://api.github.com/users/kelumsampath",
   },
   {
-    avatar_url: DefaultProfileFemale,
+    avatar_url:
+      "https://avatars1.githubusercontent.com/u/44605316?s=400&u=4b8cf55c22e363c924265cf8f257db623722e1d4&v=4",
     contributions: 16,
     events_url: "https://api.github.com/users/YohanKulasinghe/events{/privacy}",
     followers_url: "https://api.github.com/users/YohanKulasinghe/followers",
@@ -163,9 +164,9 @@ export const QATeam = [
       "https://api.github.com/users/YohanKulasinghe/following{/other_user}",
     gists_url: "https://api.github.com/users/YohanKulasinghe/gists{/gist_id}",
     gravatar_id: "",
-    html_url: "https://github.com/INTECS-UoM",
+    html_url: "https://github.com/chathuryaheshani",
     id: 28680211,
-    login: "Name",
+    login: "Chathurya Heshani",
     node_id: "MDQ6VXNlcjI4NjgwMjEx",
     organizations_url: "https://api.github.com/users/YohanKulasinghe/orgs",
     received_events_url:
@@ -180,7 +181,8 @@ export const QATeam = [
     url: "https://api.github.com/users/YohanKulasinghe",
   },
   {
-    avatar_url: DefaultProfileFemale,
+    avatar_url:
+      "https://avatars1.githubusercontent.com/u/65279093?s=400&u=76341f3cd88a202c6036d4b5ea46aaf062bed924&v=4",
     contributions: 22,
     events_url: "https://api.github.com/users/BhanukaUOM/events{/privacy}",
     followers_url: "https://api.github.com/users/BhanukaUOM/followers",
@@ -188,9 +190,9 @@ export const QATeam = [
       "https://api.github.com/users/BhanukaUOM/following{/other_user}",
     gists_url: "https://api.github.com/users/BhanukaUOM/gists{/gist_id}",
     gravatar_id: "",
-    html_url: "https://github.com/INTECS-UoM",
+    html_url: "https://github.com/SachithraJRathnayake",
     id: 28672239,
-    login: "Name",
+    login: "Sachithra Rathnayake",
     node_id: "MDQ6VXNlcjI4NjcyMjM5",
     organizations_url: "https://api.github.com/users/BhanukaUOM/orgs",
     received_events_url:
