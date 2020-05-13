@@ -2,6 +2,7 @@
 import DefaultLayout from "./layouts/DefaultLayout";
 import DashboardLayout from "./layouts/DashboardLayout";
 import LoginLayout from "./layouts/LoginLayout";
+import ContributorsLayout from "./layouts/ContributorsLayout";
 
 // views
 import Views from "./modules";
@@ -64,7 +65,7 @@ const routes = [
   },
   {
     path: "/contributes",
-    layout: DefaultLayout,
+    layout: ContributorsLayout,
     exact: true,
     component: Views.contributesView,
   },
