@@ -40,4 +40,38 @@ const getContributes = createLogic({
   },
 });
 
-export default [getContributes];
+const getContributesBackend = createLogic({
+  type: types.GET_CONTRIBUTES_BACKEND,
+  latest: true,
+  debounce: 1000,
+
+  process({ MockHTTPClient }, dispatch, done) {
+    let HTTPClient;
+    if (MockHTTPClient) {
+      HTTPClient = MockHTTPClient;
+    } else {
+      HTTPClient = API;
+    }
+    console.log("Running getContributes Service");
+    HTTPClient.Get(endPoints.GETCONTRIBUTES_BACKEND)
+      .then((resp) => resp.data)
+      .then((data) => {
+        dispatch(actions.getContributesBackendSuccess(data));
+      })
+      .catch((err) => {
+        console.log("process -> err", err);
+        var errorMessage = "Failed to get regions";
+        if (err && err.code === "ECONNABORTED") {
+          errorMessage = "Please check your internet connection.";
+        }
+        dispatch(
+          actions.getContributesBackendFail({
+            title: "Error!",
+            message: errorMessage,
+          })
+        );
+      })
+      .then(() => done());
+  },
+});
+export default [getContributes, getContributesBackend];
