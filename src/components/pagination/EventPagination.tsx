@@ -66,8 +66,6 @@ class EventPagination extends React.Component<
   }
 
   componentDidMount() {
-    console.log("componentDidMount -> this.props", this.props);
-
     // debugger;
     if (!this.props.data.loading) {
       this.LoadPosts();
