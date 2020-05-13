@@ -22,15 +22,17 @@ export default handleActions(
         pending: true,
       },
     }),
-    [types.GET_CONTRIBUTES_SUCCESS]: (state, { payload }) => ({
-      ...state,
-      contributes: {
-        ...state.contributes,
-        loading: false,
-        pending: false,
-        data: payload,
-      },
-    }),
+    [types.GET_CONTRIBUTES_SUCCESS]: (state, { payload }) => {
+      return {
+        ...state,
+        contributes: {
+          ...state.contributes,
+          loading: false,
+          pending: false,
+          data: payload,
+        },
+      };
+    },
 
     [types.GET_CONTRIBUTES_FAILED]: (state, { payload }) => ({
       ...state,

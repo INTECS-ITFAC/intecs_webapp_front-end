@@ -5,6 +5,7 @@ import { withRouter } from "react-router-dom";
 import { contributesActions } from "./ducks";
 import "./Contributes.scss";
 import ContributeCard from "../../components/contributeCard/ContributeCard";
+import { Moderators, QATeam, DesignTeam } from "../../assets/data/users";
 
 export class Contributes extends Component {
   static propTypes = {};
@@ -15,12 +16,38 @@ export class Contributes extends Component {
   render() {
     return (
       <div className="contributes-container">
-        <div>Contributes</div>
-        <div className="row contributes-card-row">
-          {this.props.Contributes.data.map((user, i) => {
-            return <ContributeCard data={user} />;
-          })}
-        </div>
+        <React.Fragment>
+          <div>Moderators</div>
+          <div className="row contributes-card-row">
+            {Moderators.map((user, i) => {
+              return <ContributeCard data={user} isContributes={false} />;
+            })}
+          </div>
+        </React.Fragment>
+        <React.Fragment>
+          <div>Contributes</div>
+          <div className="row contributes-card-row">
+            {this.props.Contributes.data.map((user, i) => {
+              return <ContributeCard data={user} isContributes={true} />;
+            })}
+          </div>
+        </React.Fragment>
+        <React.Fragment>
+          <div>QA Team</div>
+          <div className="row contributes-card-row">
+            {QATeam.map((user, i) => {
+              return <ContributeCard data={user} isContributes={false} />;
+            })}
+          </div>
+        </React.Fragment>
+        <React.Fragment>
+          <div>Design Team</div>
+          <div className="row contributes-card-row">
+            {DesignTeam.map((user, i) => {
+              return <ContributeCard data={user} isContributes={false} />;
+            })}
+          </div>
+        </React.Fragment>
 
         <div className="btn btn-info">
           <a

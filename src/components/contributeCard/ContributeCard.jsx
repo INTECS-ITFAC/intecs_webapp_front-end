@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContributeCard.scss";
 
-export default function ContributeCard({ data }) {
+export default function ContributeCard({ data, isContributes }) {
   console.log("ContributeCard -> data", data);
   return (
     <div className="contribute-card-div col-xl-2 col-lg-3 col-md-4 col-sm-5">
@@ -10,10 +10,12 @@ export default function ContributeCard({ data }) {
           <div className="profile">
             <img src={data.avatar_url} className="thumbnail" alt={data.login} />
             <h3 className="name">{data.login}</h3>
-            <div>
-              <h4>{data.contributions}</h4>
-              <p>Contributions</p>
-            </div>
+            {isContributes ? (
+              <div>
+                <h4>{data.contributions}</h4>
+                <p>Contributions</p>
+              </div>
+            ) : null}
             <a
               href={data.html_url}
               target="_blank"
