@@ -21,7 +21,6 @@ const getContributes = createLogic({
     HTTPClient.Get(endPoints.GETCONTRIBUTES)
       .then((resp) => resp.data)
       .then((data) => {
-        console.log("product id type", data);
         dispatch(actions.getContributesSuccess(data));
       })
       .catch((err) => {

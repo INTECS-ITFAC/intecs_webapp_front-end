@@ -2,7 +2,6 @@ import React from "react";
 import "./ContributeCard.scss";
 
 export default function ContributeCard({ data, isContributes }) {
-  console.log("ContributeCard -> data", data);
   return (
     <div className="contribute-card-div col-xl-2 col-lg-3 col-md-4 col-sm-5">
       <div className="card contribute-card">
