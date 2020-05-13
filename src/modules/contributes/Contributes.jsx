@@ -11,6 +11,7 @@ export class Contributes extends Component {
   static propTypes = {};
   componentDidMount() {
     this.props.contributesActions.getContributes();
+    this.props.contributesActions.getContributesBackend();
   }
 
   render() {
@@ -27,9 +28,19 @@ export class Contributes extends Component {
           </div>
         </React.Fragment>
         <React.Fragment>
-          <div>Contributes</div>
+          <div>Frontend Contributes</div>
           <div className="row contributes-card-row">
             {this.props.Contributes.data.map((user, i) => {
+              return (
+                <ContributeCard key={i} data={user} isContributes={true} />
+              );
+            })}
+          </div>
+        </React.Fragment>
+        <React.Fragment>
+          <div>Backend Contributes</div>
+          <div className="row contributes-card-row">
+            {this.props.BackendContributes.data.map((user, i) => {
               return (
                 <ContributeCard key={i} data={user} isContributes={true} />
               );
@@ -74,6 +85,7 @@ export class Contributes extends Component {
 function mapStateToProps(state) {
   return {
     Contributes: state.Contributes.contributes,
+    BackendContributes: state.Contributes.backendContributes,
   };
 }
 function mapDispatchToProps(dispatch) {
