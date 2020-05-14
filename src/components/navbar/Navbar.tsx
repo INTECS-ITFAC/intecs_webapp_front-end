@@ -39,7 +39,15 @@ function NavbarComponent() {
               <a href="/INTECSOpenSourceProjects">
                 INTECS Open Source Projects
               </a>
-              <a href="/studentsWork">Students' Work</a>
+              <div className="dropdown2">
+                <Nav.Link>Students' Work</Nav.Link>
+                <div className="dropdown-sub">
+                  <a href="/StudentsWork">First year projects</a>
+                  <a href="/StudentsWork">Second year projects</a>
+                  <a href="/StudentsWork">Fourth year projects</a>
+                  <a href="/StudentsWork">Research publications</a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="link-div">
