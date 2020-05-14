@@ -66,8 +66,6 @@ class EventPagination extends React.Component<
   }
 
   componentDidMount() {
-    console.log("componentDidMount -> this.props", this.props);
-
     // debugger;
     if (!this.props.data.loading) {
       this.LoadPosts();
@@ -125,9 +123,7 @@ class EventPagination extends React.Component<
           nextClassName={"page-item"}
           nextLinkClassName={"page-link"}
           activeClassName={"active"}
-        >
-          >
-        </ReactPaginate>
+        />
       </div>
     );
   }

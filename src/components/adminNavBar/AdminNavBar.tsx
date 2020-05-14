@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faBell,faFlag, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBell,faFlag } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/images/intecs_logo.png";
 import "./AdminNavBar.scss";
 

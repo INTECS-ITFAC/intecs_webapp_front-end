@@ -21,7 +21,6 @@ const getAllEvents = createLogic({
     HTTPClient.Get(endPoints.Get_all_events)
       .then((resp) => resp.data)
       .then((data) => {
-        console.log("getAllEvents data ", data);
         dispatch(actions.getAllEventsSuccess(data));
       })
       .catch((err) => {

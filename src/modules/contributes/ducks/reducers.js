@@ -9,6 +9,13 @@ const initialState = {
     data: [],
     error: {},
   },
+  backendContributes: {
+    loading: true,
+    pending: false,
+    hasError: false,
+    data: [],
+    error: {},
+  },
 };
 
 // Reducers from redux-actions
@@ -22,20 +29,52 @@ export default handleActions(
         pending: true,
       },
     }),
-    [types.GET_CONTRIBUTES_SUCCESS]: (state, { payload }) => ({
-      ...state,
-      contributes: {
-        ...state.contributes,
-        loading: false,
-        pending: false,
-        data: payload,
-      },
-    }),
+    [types.GET_CONTRIBUTES_SUCCESS]: (state, { payload }) => {
+      return {
+        ...state,
+        contributes: {
+          ...state.contributes,
+          loading: false,
+          pending: false,
+          data: payload,
+        },
+      };
+    },
 
     [types.GET_CONTRIBUTES_FAILED]: (state, { payload }) => ({
       ...state,
       contributes: {
         ...state.contributes,
+        loading: false,
+        pending: false,
+        hasError: true,
+        error: { payload },
+      },
+    }),
+    [types.GET_CONTRIBUTES_BACKEND]: (state, { payload }) => ({
+      ...state,
+      backendContributes: {
+        ...state.backendContributes,
+        loading: true,
+        pending: true,
+      },
+    }),
+    [types.GET_CONTRIBUTES_BACKEND_SUCCESS]: (state, { payload }) => {
+      return {
+        ...state,
+        backendContributes: {
+          ...state.backendContributes,
+          loading: false,
+          pending: false,
+          data: payload,
+        },
+      };
+    },
+
+    [types.GET_CONTRIBUTES_BACKEND_FAILED]: (state, { payload }) => ({
+      ...state,
+      backendContributes: {
+        ...state.backendContributes,
         loading: false,
         pending: false,
         hasError: true,
