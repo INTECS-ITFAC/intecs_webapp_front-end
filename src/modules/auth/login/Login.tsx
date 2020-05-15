@@ -1,12 +1,13 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import {Button, Form} from "react-bootstrap";
-import INTECSLOGO from "../../../assets/images/intecs_logo.png";
 
-import "./Login.scss";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {faLock} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import INTECSLOGO from "../../../assets/images/intecs_logo.png";
+
+import "./Login.scss";
 
 export class Login extends Component <
     {},
