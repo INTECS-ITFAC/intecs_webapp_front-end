@@ -123,9 +123,7 @@ class EventPagination extends React.Component<
           nextClassName={"page-item"}
           nextLinkClassName={"page-link"}
           activeClassName={"active"}
-        >
-          >
-        </ReactPaginate>
+        />
       </div>
     );
   }

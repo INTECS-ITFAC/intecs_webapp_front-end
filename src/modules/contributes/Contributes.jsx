@@ -68,15 +68,17 @@ export class Contributes extends Component {
           </div>
         </React.Fragment>
 
-        <div className="btn btn-info">
+        <div style={{ textAlign: "center", padding: "10px" }}>
           <a
             href={"https://gitter.im/INTECS-ITFAC/community"}
             target="_blank"
             rel="noopener noreferrer"
+            className="btnCallToAction"
           >
-            Join Community
+            CALL TO ACTION
           </a>
         </div>
+        <br/>
       </div>
     );
   }
