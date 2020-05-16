@@ -110,6 +110,10 @@
   display: block;
 }
 
+.dropdown2 {
+  position: relative;
+}
+
 .dropdown2:hover .dropdown-sub {
   display: block;
 }
@@ -117,8 +121,9 @@
 .dropdown-sub {
   display: none;
   position: absolute;
+  top: 0;
+  left: 100%;
   background-color: black;
   min-width: 160px;
   z-index: 5;
-  margin-left: 30px;
 }
