@@ -46,10 +46,10 @@ function NavbarComponent() {
             <div className="dropdown">
               <Nav.Link>Projects</Nav.Link>
               <div className="dropdown-content">
-                <a href="/linkIT">LinkIT</a>
-                <a href="/INTECSOpenSourceProjects">
+                <Nav.Link href="/linkIT">LinkIT</Nav.Link>
+                <Nav.Link href="/INTECSOpenSourceProjects">
                   INTECS Open Source Projects
-                </a>
+                </Nav.Link>
               </div>
             </div>
             <div className="link-div">
