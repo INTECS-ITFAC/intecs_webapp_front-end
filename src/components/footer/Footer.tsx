@@ -46,7 +46,7 @@ function Footer() {
         className="w-100 d-flex justify-content-center"
         style={{ background: primaryColor }}
       >
-        <p style={{ color: "#D3D3D3" }}>
+        <p className="textClass" style={{ color: "#D3D3D3" }}>
           Developed By : <Link to={"/contributes"}>Opensource Community</Link>
         </p>
       </div>

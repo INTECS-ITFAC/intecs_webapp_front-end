@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/navbar/Navbar";
+
 
 const LoginLayout = (ViewComponent) => {
   return class extends React.Component {
     render() {
       return (
         <>
-          {/* <Import the nav bar> */}
-          <Navbar />
           <div>
             <ViewComponent />
           </div>

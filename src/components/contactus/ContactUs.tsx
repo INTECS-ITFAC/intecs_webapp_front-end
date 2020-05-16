@@ -37,9 +37,9 @@ function ContactUs() {
               <p className="header">
                 <u>{profile.post}</u>
               </p>
-              <p>{profile.name}</p>
-              <p>{profile.contactNum}</p>
-              <p>{profile.email}</p>
+              <p className="content">{profile.name}</p>
+              <p className="content">{profile.contactNum}</p>
+              <p className="content">{profile.email}</p>
             </div>
           );
         })}
