@@ -46,12 +46,23 @@ function NavbarComponent() {
             <div className="dropdown">
               <Nav.Link>Projects</Nav.Link>
               <div className="dropdown-content">
-                <Nav.Link href="/linkIT">LinkIT</Nav.Link>
-                <Nav.Link href="/INTECSOpenSourceProjects">
-                  INTECS Open Source Projects
-                </Nav.Link>
+
+                <a href="/linkIT">LinkIT</a>
+                 <a href="/INTECSOpenSourceProjects">
+                INTECS Open Source Projects
+              </a>
+              <div className="dropdown2">
+                <Nav.Link>Students' Work</Nav.Link>
+                <div className="dropdown-sub">
+                  <a href="/StudentsWork">First year projects</a>
+                  <a href="/StudentsWork">Second year projects</a>
+                  <a href="/StudentsWork">Fourth year projects</a>
+                  <a href="/StudentsWork">Research publications</a>
+                </div>
+
               </div>
-            </div>
+             </div>
+          </div>
             <div className="link-div">
               <Nav.Link href="/studentsWork">Student's Work</Nav.Link>
             </div>
