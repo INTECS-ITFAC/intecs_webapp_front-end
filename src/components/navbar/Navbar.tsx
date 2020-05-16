@@ -4,6 +4,7 @@ import Logo from "../../assets/images/intecs_logo.png";
 import "./Navbar.scss";
 import { useLocation } from "react-router-dom";
 
+// @ts-ignore
 function NavbarComponent() {
   const location = useLocation();
 
@@ -35,7 +36,7 @@ function NavbarComponent() {
             </div>
           </Nav>
         ) : (
-          <Nav className="ml-auto">
+          <Nav className="ml-auto" activeKey={location.pathname}>
             <div className="link-div">
               <Nav.Link href="/">Home</Nav.Link>
             </div>
@@ -45,13 +46,16 @@ function NavbarComponent() {
             <div className="dropdown">
               <Nav.Link>Projects</Nav.Link>
               <div className="dropdown-content">
-                <a href="/linkIT">LinkIT</a>
-                <a href="/INTECSOpenSourceProjects">
+                <Nav.Link href="/linkIT">LinkIT</Nav.Link>
+                <Nav.Link href="/INTECSOpenSourceProjects">
                   INTECS Open Source Projects
-                </a>
-                <a href="/studentsWork">Students' Work</a>
+                </Nav.Link>
               </div>
             </div>
+            <div className="link-div">
+              <Nav.Link href="/studentsWork">Student's Work</Nav.Link>
+            </div>
+
             <div className="link-div">
               <Nav.Link href="/gallery">Gallery</Nav.Link>
             </div>
@@ -64,7 +68,5 @@ function NavbarComponent() {
     </Navbar>
   );
 }
-
-NavbarComponent.propTypes = {};
 
 export default NavbarComponent;
