@@ -1,0 +1,88 @@
+// Extra small screen / phone
+$screen-xs: 480px;
+// Small screen / tablet
+$screen-sm: 768px;
+
+// Medium screen / desktop
+$screen-md: 992px;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm - 1);
+$screen-sm-max: ($screen-md - 1);
+
+// respond-to()
+// ------------
+@mixin respond-to($media) {
+  @if $media == xs {
+    @media (max-width: $screen-xs-max) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+      @content;
+    }
+  }
+}
+
+.desc {
+  color: black;
+  padding: 5px;
+  margin: 0;
+  font-size: 15px;
+  font-family: Arial,sans-serif;
+}
+
+.title {
+  color: black;
+  font-family: "Arial Nova", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.author {
+  padding: 0;
+  color: #48494B;
+  font-family: -apple-system, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+.card-image {
+  margin-top: 5px;
+}
+
+
+.card-main {
+  cursor: pointer;
+  margin: 15px;
+  min-width: 350px !important;
+  max-width: 350px !important;
+  box-shadow: 6px 10px 18px -7px rgba(0,0,0,0.75);
+  @include respond-to(xs)
+  {
+    max-width: 250px !important;
+    min-width: 0 !important;
+    padding: 0;
+    margin: 0 0 10px;
+
+  }
+}
+
+.card-main:hover {
+  box-shadow: 6px 10px 24px 0 rgba(0,0,0,0.75);
+}
+
+.tags {
+  margin-left: 5px;
+  margin-right: 5px;
+  z-index: 2;
+
+}
+
+.tag-row {
+  margin-top: 8px;
+  margin-left: 8px;
+  position: absolute;
+  z-index: 1;
+}

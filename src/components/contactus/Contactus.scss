@@ -17,12 +17,18 @@ $break-large: 1000px;
   }
 }
 
-.contact-us-container {
-  position: absolute;
-  width: 100%;
+.contact-us {
+  color: white;
+  text-align: center;
+  //width: 95%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-p {
+.contact-us h1 {
+  font-weight: bold;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,6 +40,7 @@ p {
 
   @include respond-to(handhelds) {
     margin-top: 0;
+    font-size: 15px;
     margin-bottom: 0;
     align-items: inherit;
     flex-direction: row;
@@ -51,10 +58,11 @@ p {
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  font-family: "Agency FB", sans-serif;
-  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
   color: white;
   align-content: center;
   @include respond-to(handhelds) {

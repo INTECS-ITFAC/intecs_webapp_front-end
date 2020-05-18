@@ -17,21 +17,8 @@ $break-large: 1024px;
   }
 }
 
-.dynamic-footer {
-  bottom: 0;
-  width: 100%;
-  height: 240px;
-  max-height: 240px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .footer-container {
-  left: 0;
-  bottom: 0;
   width: 100%;
-  height: 480px;
-  max-height: 480px;
   border: #e8f5e9;
   font-size: 25px;
 }
@@ -91,6 +78,7 @@ label {
   color: gainsboro;
   padding-left: 2px;
   padding-right: 2px;
+  text-align: center;
   margin-right: 0;
   margin-left: 0;
   font-size: 25px;

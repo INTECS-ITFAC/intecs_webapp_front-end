@@ -5,7 +5,7 @@ import EventCard from "../eventCard/EventCard";
 import { PostSchema } from "./Interfaces";
 
 class EventPagination extends React.Component<
-  {},
+  { data: any },
   {
     offset: number;
     postsList: PostSchema[];
@@ -65,20 +65,29 @@ class EventPagination extends React.Component<
     this.paginate = this.paginate.bind(this);
   }
 
+  componentDidMount() {
+    // debugger;
+    if (!this.props.data.loading) {
+      this.LoadPosts();
+    }
+  }
+
   LoadPosts() {
     //axios.get can be added here when service is defined
-    const postsSlice = this.state.postsList.slice(
+    // debugger;
+    const postsSlice = this.props.data.data.data.slice(
       this.state.offset,
       this.state.offset + this.state.perPage
     );
-    const post = postsSlice.map((p) => (
+    const post = postsSlice.map((p: any) => (
       <React.Fragment>
         <EventCard event={p} />
         <br />
       </React.Fragment>
     ));
     this.setState({
-      pageCount: Math.ceil(this.state.postsList.length / this.state.perPage),
+      pageCount: Math.ceil(this.props.data.data.length / this.state.perPage),
+
       posts: post,
     });
   }
@@ -94,10 +103,6 @@ class EventPagination extends React.Component<
       }
     );
   };
-
-  componentDidMount() {
-    this.LoadPosts();
-  }
 
   render() {
     return (
@@ -118,9 +123,7 @@ class EventPagination extends React.Component<
           nextClassName={"page-item"}
           nextLinkClassName={"page-link"}
           activeClassName={"active"}
-        >
-          >
-        </ReactPaginate>
+        />
       </div>
     );
   }
