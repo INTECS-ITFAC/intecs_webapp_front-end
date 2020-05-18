@@ -11,14 +11,22 @@ function DashboardSidebar(props) {
         className="flex-column"
         activeKey={props.location.pathname}
       >
-        <Nav.Link href="/dashboard/eventManagement">Event Management</Nav.Link>
-        <Nav.Link href="/dashboard/eventFlowManagement">
+        <Nav.Link href="/dashboard/eventManagement" className="link-div">
+          Event Management
+        </Nav.Link>
+        <Nav.Link href="/dashboard/eventFlowManagement" className="link-div">
           Flow Management
         </Nav.Link>
-        <Nav.Link href="/dashboard/newsManagement">News Management</Nav.Link>
-        <Nav.Link href="/dashboard/linkIT">LinkIT</Nav.Link>
-        <Nav.Link href="/dashboard/addStudentWork">Add Student Work</Nav.Link>
-        <Nav.Link href="/dashboard/openSourceManagement">
+        <Nav.Link href="/dashboard/newsManagement" className="link-div">
+          News Management
+        </Nav.Link>
+        <Nav.Link href="/dashboard/linkIT" className="link-div">
+          LinkIT
+        </Nav.Link>
+        <Nav.Link href="/dashboard/addStudentWork" className="link-div">
+          Add Student Work
+        </Nav.Link>
+        <Nav.Link href="/dashboard/openSourceManagement" className="link-div">
           Open Source Management
         </Nav.Link>
       </Nav>
