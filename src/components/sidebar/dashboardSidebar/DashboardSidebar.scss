@@ -4,8 +4,24 @@
   width: 300px;
 }
 
+.link-div:hover {
+  background-color: darkred;
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+@media only screen and (min-width: 200px) {
+  .link-div {
+    //width: 180px;
+    font-size: 100%;
+    text-align: center;
+  }
+}
+
 .link-div {
   background-color: black;
+  border: 1px solid rgb(167, 20, 20);
+  border-radius: 15px !important;
   font-weight: bold;
   font-size: 90%;
   text-align: left;
