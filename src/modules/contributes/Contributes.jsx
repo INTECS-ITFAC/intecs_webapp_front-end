@@ -16,9 +16,9 @@ export class Contributes extends Component {
 
   render() {
     return (
-      <div className="contributes-container">
+      <div className="contributes-container text-center">
         <React.Fragment>
-          <div>Moderators</div>
+          <div className = "contribute-header"><h3 className="contribute-content">Moderators</h3></div>
           <div className="row contributes-card-row">
             {Moderators.map((user, i) => {
               return (
@@ -28,7 +28,7 @@ export class Contributes extends Component {
           </div>
         </React.Fragment>
         <React.Fragment>
-          <div>Frontend Contributes</div>
+            <div className = "contribute-header"><h3 className="contribute-content">Frontend Contributes</h3></div>
           <div className="row contributes-card-row">
             {this.props.Contributes.data.map((user, i) => {
               return (
@@ -38,7 +38,7 @@ export class Contributes extends Component {
           </div>
         </React.Fragment>
         <React.Fragment>
-          <div>Backend Contributes</div>
+            <div className = "contribute-header"><h3 className="contribute-content">Backend Contributes</h3></div>
           <div className="row contributes-card-row">
             {this.props.BackendContributes.data.map((user, i) => {
               return (
@@ -48,7 +48,7 @@ export class Contributes extends Component {
           </div>
         </React.Fragment>
         <React.Fragment>
-          <div>QA Team</div>
+            <div className = "contribute-header"><h3 className="contribute-content">QA Team</h3></div>
           <div className="row contributes-card-row">
             {QATeam.map((user, i) => {
               return (
@@ -58,7 +58,7 @@ export class Contributes extends Component {
           </div>
         </React.Fragment>
         <React.Fragment>
-          <div>Design Team</div>
+            <div className = "contribute-header"><h3 className="contribute-content">Design Team</h3></div>
           <div className="row contributes-card-row">
             {DesignTeam.map((user, i) => {
               return (
@@ -75,7 +75,7 @@ export class Contributes extends Component {
             rel="noopener noreferrer"
             className="btnCallToAction"
           >
-            CALL TO ACTION
+            JOIN CHAT
           </a>
         </div>
         <br/>

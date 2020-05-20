@@ -7,16 +7,44 @@
   padding-top: 100px;
 }
 
+.contribute-content
+{
+  color: whitesmoke;
+  text-align:center;
+  position: relative;
+}
+
+.contribute-header
+{
+
+  display: inline-block;
+  width: auto;
+  height: 100px;
+  padding: 30px;
+  margin-top: 40px;
+
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background:    -moz-linear-gradient(#648880, #293f50);
+  background:         linear-gradient(#648880, #293f50);
+
+
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
+  -webkit-box-shadow: 10px 7px 39px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 7px 39px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 7px 39px 0px rgba(0,0,0,0.75);
+}
+
 .contributes-card-row {
   padding: 10px;
 }
 
 .btnCallToAction {
   color:white;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 30px;
   background-color: green;
 border-radius: 50px;
 font-weight: bold;
