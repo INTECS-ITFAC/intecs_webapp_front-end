@@ -1,0 +1,73 @@
+.header-banner {
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/cover.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.header-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.header-banner-section {
+  position: relative;
+  padding: 15% 0 10%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.header-btn-container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.header-btn {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  height: 70px;
+  padding: 20px;
+  transition: all 0.2s ease-in;
+  font-size: 18px;
+}
+
+.header-btn:hover {
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #222;
+  height: 70px;
+  padding: 20px;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 400;
+}

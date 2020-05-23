@@ -1,0 +1,121 @@
+.intecs-open-source-projects-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+}
+
+.content-space-of-all-intecs-open-source-projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: space-between;
+  margin-bottom: 15%;
+  border: 1px darken($color: #000000, $amount: 0) #cc2e72;
+  padding: 1%;
+}
+
+.image-container-of-the-project {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.project-picture {
+  width: 100%;
+}
+
+.description-container-of-the-project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+.horizontal-line {
+  width: 0px;
+  height: 0px;
+  background-color: #cc2e72;
+  border-top: 0px;
+  margin: 0px;
+}
+
+.header-of-the-project {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.project-description {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: medium;
+}
+
+.avatar {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.gitter-avatar {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 650px) {
+  .header-of-the-project {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    max-width: 750px;
+    justify-content: space-between;
+    margin-bottom: 6%;
+    border: unset;
+    padding: unset;
+  }
+  .image-container-of-the-project {
+    display: flex;
+    width: 35%;
+    height: 100%;
+  }
+  .description-container-of-the-project {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: unset;
+  }
+  .project-description {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: small;
+  }
+  .horizontal-line {
+    width: 90px;
+    height: 6px;
+    background-color: #cc2e72;
+    border-top: 0px;
+    margin: 0px;
+  }
+}

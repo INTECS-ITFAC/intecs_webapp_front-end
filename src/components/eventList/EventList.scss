@@ -1,14 +1,29 @@
 .event-list-container {
   background-color: #d7bde2;
-  height: 700px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
-.header {
+.header-of-event-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bolder;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  color: white;
 }
 
-.vertical-time-line {
-  height: 630px;
+.upcoming-events-body-text-color {
+  color: #837171;
+  font-weight: bold;
+}
+
+.element-content {
+  display: "flex";
+  flex-direction: "column";
+  width: "100%";
 }

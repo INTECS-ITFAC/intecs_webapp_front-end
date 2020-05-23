@@ -1,63 +1,96 @@
-.bottom-footer-container {
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  max-height: 60px;
-}
+$break-small: 479px;
+$break-large: 1024px;
 
-.footer-part2 {
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  max-height: 200px;
+@mixin respond-to($media) {
+  @if $media == smaller-screens {
+    @media only screen and (max-width: $break-small) {
+      @content;
+    }
+  } @else if $media == handhelds {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
+      @content;
+    }
+  } @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) {
+      @content;
+    }
+  }
 }
 
 .footer-container {
-  bottom: 0;
   width: 100%;
-  height: 460px;
-  max-height: 460px;
   border: #e8f5e9;
   font-size: 25px;
 }
 
 label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: Arial, serif;
   font-weight: bold;
   font-size: 30px;
   color: gainsboro;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
 
-.switch-class {
-  padding-left: 10px;
-  padding-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include respond-to(smaller-screens) {
+    font-size: 16px;
+  }
+  @include respond-to(handhelds) {
+    font-size: 16px;
+  }
 }
 
 .socialIcon {
   padding-left: 20px;
   padding-right: 20px;
+
+  @include respond-to(handhelds) {
+    transform: scale(0.6);
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
 }
 
 .socialIcon:hover {
   transform: scale(1.2);
+  @include respond-to(handhelds) {
+    transform: scale(0.8);
+  }
 }
 
 .logoIcon {
-  height: 100px;
+  height: 130px;
   width: auto;
+
+  @include respond-to(handhelds) {
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 80px;
+  }
+  @include respond-to(smaller-screens) {
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 50px;
+  }
 }
 
 .textClass {
   font-family: "Arial Nova", sans-serif;
-  font-size: 30px;
   color: gainsboro;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 25px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
-  align-content: space-around;
+  @include respond-to(handhelds) {
+    font-size: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include respond-to(smaller-screens) {
+    font-size: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

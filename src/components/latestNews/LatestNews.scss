@@ -1,4 +1,196 @@
 .latest-news-container {
-  background-color: #e8f5e9;
-  height: 500px;
+  //don't set a height
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+#breaking {
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  padding: 5px;
+  background: #334677;
+  color: white;
+  position: relative;
+  box-shadow: 0px 0px 4px 0px #000000;
+  top: 50px;
+  left: 0;
+  z-index: 999;
+}
+#newsTicker {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 0px 4px 0px #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header-of-latest-programs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.competions-and-others-buttons {
+  width: 150px;
+  height: 38px;
+  background-color: white;
+  color: rgb(143, 19, 19);
+  outline: none;
+  border: 2px solid rgb(143, 19, 19);
+}
+
+.competions-and-others-buttons:focus {
+  outline: none;
+}
+
+.competions-and-others-buttons-active {
+  width: 150px;
+  height: 38px;
+  background-color: rgb(143, 19, 19);
+  color: white;
+  outline: none;
+  border: 2px solid rgb(143, 19, 19);
+}
+
+.competions-and-others-buttons-active:focus w {
+  outline: none;
+}
+
+.all-competitions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+
+.competition-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 90%;
+  max-width: 750px;
+  border: 2px solid rgb(119, 118, 118);
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 3px 3px 3px rgb(214, 212, 212);
+}
+
+.competition-logo {
+  display: flex;
+  position: relative;
+  position: absolute;
+  background-color: white;
+  border: 2px solid rgb(94, 92, 92);
+  border-radius: 20px;
+  width: fit-content;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-weight: bolder;
+  color: gray;
+  top: -18px;
+  z-index: 100;
+  width: 150px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.containt-picture-and-description-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+.containt-picture {
+  border-radius: 25px;
+  min-height: fit-content;
+  width: 150px;
+}
+
+.description-and-date-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 45%;
+  width: 70%;
+  margin: 4% 4% 2% 4%;
+  overflow-wrap: break-word;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.description-container {
+  overflow-wrap: break-word;
+  min-height: 80%;
+}
+
+.date-container {
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 601px) {
+  .competition-logo {
+    left: 4%;
+  }
+  .competition-container {
+    margin: 20px;
+  }
+  .containt-picture {
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .competition-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 5%;
+  }
+  .competition-logo {
+    align-self: center;
+  }
+  .containt-picture-and-description-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .containt-picture {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .description-and-date-container {
+    width: 90%;
+  }
+  .competition-name-and-logo-container {
+    left: 0%;
+    justify-self: center;
+  }
 }
