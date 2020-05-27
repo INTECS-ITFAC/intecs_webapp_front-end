@@ -1,0 +1,63 @@
+.addStudentWorkContainer {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+}
+
+.blocksContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  height: fit-content;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 290px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #343a40;
+  border-radius: 3px;
+  box-shadow: 2px 2px #888888;
+}
+
+.projectCategoryIcon {
+  width: 25%;
+  background-color: #343a40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiSvgIcon-root.listIcon {
+  color: white;
+  width: 80%;
+  height: 90%;
+}
+
+.projectCategoryNameAndCount {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.projectCategoryName {
+  height: 25%;
+  padding-left: 6%;
+  padding-top: 2%;
+  font-size: small;
+  font-weight: bold;
+  color: #343a40;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.projectCategoryProjectCount {
+  padding-left: 6%;
+  font-size: 30px;
+  color: rgb(223, 184, 8);
+}
