@@ -53,12 +53,12 @@ function NavbarComponent() {
               </div>
             </div>
             <div className="dropdown link-div">
-              <Nav.Link href="/studentsWork">Student's Work</Nav.Link>
+              <Nav.Link>Student's Work</Nav.Link>
               <div className="dropdown-content">
-                <a href="/StudentsWork">First year projects</a>
-                <a href="/StudentsWork">Second year projects</a>
-                <a href="/StudentsWork">Fourth year projects</a>
-                <a href="/StudentsWork">Research publications</a>
+                <a href="/StudentsWork">First Year Projects</a>
+                <a href="/StudentsWork">Second Year Projects</a>
+                <a href="/StudentsWork">Final Year Projects</a>
+                <a href="/StudentsWork">Research Publications</a>
               </div>
             </div>
 
