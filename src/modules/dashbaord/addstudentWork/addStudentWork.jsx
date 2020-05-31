@@ -40,7 +40,7 @@ const AddStudentWork = () => {
     },
   ];
 
-  const fourthYearProjectsList = [
+  const finalYearProjectsList = [
     {
       projectName: "A",
     },
@@ -55,6 +55,20 @@ const AddStudentWork = () => {
   return (
     <div className="addStudentWorkContainer">
       <div className="blocksContainer">
+        <div className="blocks">
+          <div className="projectCategoryIcon">
+            <ListIcon className="listIcon" />
+          </div>
+          <div className="projectCategoryNameAndCount">
+            <div className="projectCategoryName">All Projects</div>
+            <div className="projectCategoryProjectCount">
+              {firstYearProjectsList.length +
+                secondYearProjectsList.length +
+                thirdYearProjectsList.length +
+                finalYearProjectsList.length}
+            </div>
+          </div>
+        </div>
         <div className="blocks">
           <div className="projectCategoryIcon">
             <ListIcon className="listIcon" />
@@ -93,9 +107,9 @@ const AddStudentWork = () => {
             <ListIcon className="listIcon" />
           </div>
           <div className="projectCategoryNameAndCount">
-            <div className="projectCategoryName">Fourth Year Projects</div>
+            <div className="projectCategoryName">Final Year Projects</div>
             <div className="projectCategoryProjectCount">
-              {fourthYearProjectsList.length}
+              {finalYearProjectsList.length}
             </div>
           </div>
         </div>
