@@ -182,7 +182,7 @@ export const QATeam = [
   },
   {
     avatar_url:
-      "https://avatars1.githubusercontent.com/u/65279093?s=400&u=76341f3cd88a202c6036d4b5ea46aaf062bed924&v=4",
+      "https://avatars1.githubusercontent.com/u/40082320?s=400&u=fa53708631774c1d5c25d4a1b36a56357ba2cf7a&v=4",
     contributions: 22,
     events_url: "https://api.github.com/users/BhanukaUOM/events{/privacy}",
     followers_url: "https://api.github.com/users/BhanukaUOM/followers",
@@ -190,7 +190,7 @@ export const QATeam = [
       "https://api.github.com/users/BhanukaUOM/following{/other_user}",
     gists_url: "https://api.github.com/users/BhanukaUOM/gists{/gist_id}",
     gravatar_id: "",
-    html_url: "https://github.com/SachithraJRathnayake",
+    html_url: "https://github.com/SachithraRathnayake",
     id: 28672239,
     login: "Sachithra Rathnayake",
     node_id: "MDQ6VXNlcjI4NjcyMjM5",
