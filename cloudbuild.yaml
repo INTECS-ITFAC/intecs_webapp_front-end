@@ -5,5 +5,5 @@ steps:
       - '-c'
       - |
         npm install && 
-        firebase run build && \
+        npm run build && \
         firebase deploy --only hosting:intecs-pr
