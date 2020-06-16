@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./addStudentWork.scss";
 import ListIcon from "@material-ui/icons/List";
+import AddIcon from "@material-ui/icons/Add";
+import SearchIcon from "@material-ui/icons/SearchRounded";
 import ProjectsListTableComponent from "./ProjectsListsTables/projectsListTable";
 
 const AddStudentWork = () => {
@@ -163,6 +165,21 @@ const AddStudentWork = () => {
 
   return (
     <div className="addStudentWorkContainer">
+      <div>
+        <div className="toolbarContainer">
+          <div>
+            <input type="text" placeholder="Search" name="search" />
+            <button>
+              <SearchIcon />
+            </button>
+          </div>
+          <button>
+            <AddIcon className="addIcon" />
+            Add New
+          </button>
+        </div>
+      </div>
+
       <div className="blocksContainer">
         <div className="blocks" onClick={() => showAllProjectTableFunction()}>
           <div className="projectCategoryIcon">

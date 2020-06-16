@@ -5,6 +5,33 @@
   flex-direction: column;
 }
 
+.toolbarContainer {
+  padding: 10px;
+  margin-left: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+
+  input {
+    height: 100%;
+    border: 1px solid #343a40;
+  }
+
+  button {
+    margin-right: 6px;
+    padding: 8px 12px;
+    color: white;
+    background-color: #343a40;
+    text-align: end;
+    border-radius: 4px;
+  }
+
+  .addIcon {
+    position: center;
+    margin-right: 2px;
+  }
+}
+
 .blocksContainer {
   display: flex;
   flex-direction: row;
