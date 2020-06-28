@@ -9,7 +9,7 @@ export class ResearchPublications extends Component {
     return (
       <div className="students-work-container">
         {/*<Heading />*/}
-        <div>Students' Work Allocated Space</div>
+        <div>Research publications Allocated Space</div>
       </div>
     );
   }

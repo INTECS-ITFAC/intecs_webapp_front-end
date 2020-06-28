@@ -9,7 +9,7 @@ export class FourthYearProjects extends Component {
     return (
       <div className="students-work-container">
         {/*<Heading />*/}
-        <div>Students' Work Allocated Space</div>
+        <div>Fourth year Work Allocated Space</div>
       </div>
     );
   }
