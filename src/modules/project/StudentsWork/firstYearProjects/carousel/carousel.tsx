@@ -44,7 +44,7 @@ function FirstYearCarousel() {
               <img
                 className="d-block w-100"
                 src={String(slide.image)}
-                alt="carousel image"
+                alt="carousel slide"
               />
             </Carousel.Item>
           );
