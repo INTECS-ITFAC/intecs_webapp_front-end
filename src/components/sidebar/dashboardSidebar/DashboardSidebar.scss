@@ -1,4 +1,30 @@
 .dashboard-sidebar-container {
   padding-top: 100px;
-  background-color: #90a4ae;
+  background-color: #343a40;
+  width: 300px;
+}
+
+.link-div:hover {
+  background-color: darkred;
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+@media only screen and (min-width: 200px) {
+  .link-div {
+    //width: 180px;
+    font-size: 100%;
+    text-align: center;
+  }
+}
+
+.link-div {
+  background-color: black;
+  border: 1px solid #007bff;
+  border-radius: 15px !important;
+  font-weight: bold;
+  font-size: 90%;
+  text-align: left;
+  margin: 5px;
+  padding: 15px;
 }

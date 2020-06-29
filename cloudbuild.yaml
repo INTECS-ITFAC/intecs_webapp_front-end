@@ -1,12 +1,9 @@
 steps:
-  # Install Node Modules
-  - name: 'gcr.io/cloud-builders/npm'
-    args: ['install']
-
-  # Build
-  - name: 'gcr.io/cloud-builders/npm'
-    args: ['run', 'build']
-
-  # Deploy
-  - name: 'gcr.io/$PROJECT_ID/firebase'
-    args: ['deploy', '--only', 'hosting:intecs-pr']
+  - name: bhanukauom/firebase:latest
+    entrypoint: /bin/sh
+    args:
+      - '-c'
+      - |
+        npm install && 
+        npm run build && \
+        firebase deploy --only hosting:intecs-pr

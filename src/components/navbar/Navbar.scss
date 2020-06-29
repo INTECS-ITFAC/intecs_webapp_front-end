@@ -47,7 +47,6 @@
   font-size: 70%;
   text-align: left;
   margin: 4px 6px;
-  padding: 0 10px;
 }
 
 .link-div:hover {
@@ -56,7 +55,6 @@
 
 @media only screen and (min-width: 992px) {
   .link-div {
-    //width: 180px;
     font-size: 100%;
     text-align: center;
   }
@@ -68,13 +66,20 @@
   font-weight: bold;
   font-size: 70%;
   text-align: left;
-  padding: 0 10px;
   margin: 4px 6px;
 }
 
 @media only screen and (min-width: 992px) {
   .dropdown {
-    width: 110px;
+    width: 100px;
+    font-size: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1045px) {
+  .dropdown {
+    width: auto;
     font-size: 100%;
     text-align: center;
   }
@@ -108,22 +113,4 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown2 {
-  position: relative;
-}
-
-.dropdown2:hover .dropdown-sub {
-  display: block;
-}
-
-.dropdown-sub {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  background-color: black;
-  min-width: 160px;
-  z-index: 5;
 }

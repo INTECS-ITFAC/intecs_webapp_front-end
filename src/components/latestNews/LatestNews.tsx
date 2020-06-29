@@ -3,8 +3,18 @@ import React, { useState } from "react";
 // import PropTypes from 'prop-types'
 import "./LatestNews.scss";
 import Ticker from "react-ticker";
-import CompetitionImageOfHashCode from "./images/Photo.jpg";
-import HashCodeImage from "./images/Hash-Code.jpg";
+
+import {
+  MDBBtn,
+  MDBCard,
+  MDBCardBody,
+  MDBCardImage,
+  MDBCardTitle,
+  MDBCardText,
+  MDBRow,
+  MDBCol,
+  MDBView,
+} from "mdbreact";
 
 const News = () => (
   <div className={"latest-news-container"}>
@@ -36,25 +46,6 @@ function LatestNews() {
     setButtonClassID(0);
   };
 
-  const competitionsList = [
-    {
-      id: 1,
-      competitionLogo: HashCodeImage,
-      competitionImage: CompetitionImageOfHashCode,
-      description:
-        "Hash Code is a team programming competition, organized by Google, for students and professionals around the world. You pick your team and programming language and we pick an engineering problem for you to solve. This year’s contest kicks off with an Online Qualification Round, where your team can compete from wherever you’d like, including from one of our Hash Code hubs. Top teams will then be invited to a Google office for the Final Round.",
-      date: "14.04.2020",
-    },
-    {
-      id: 2,
-      competitionLogo: HashCodeImage,
-      competitionImage: CompetitionImageOfHashCode,
-      description:
-        "Hash Code is a team programming competition, organized by Google, for students and professionals around the world. You pick your team and programming language and we pick an engineering problem for you to solve",
-      date: "14.04.2020",
-    },
-  ];
-
   return (
     <div>
       <div>
@@ -84,34 +75,128 @@ function LatestNews() {
             Others
           </button>
         </div>
-        <div>
+        <br />
+        <br />
+        <div style={{ marginLeft: "200px" }}>
           {buttonClassID === 1 && (
-            <div className="all-competitions-container">
-              {competitionsList.map((array) => {
-                return (
-                  <div key={array.id} className="competition-container">
-                    <img
-                      className="competition-logo"
-                      src={array.competitionLogo}
-                      alt="logo"
+            <MDBRow>
+              <MDBCol
+                md="4"
+                style={{ maxWidth: "30rem", border: "2px solid #fff" }}
+              >
+                <MDBCard wide cascade>
+                  <MDBView cascade>
+                    <MDBCardImage
+                      hover
+                      overlay="white-slight"
+                      className="card-img-top"
+                      src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                      alt="Card cap"
                     />
-                    <div className="containt-picture-and-description-container">
-                      <img
-                        src={array.competitionImage}
-                        className="containt-picture"
-                        alt="competition"
-                      />
-                      <div className="description-and-date-container">
-                        <div className="description-container">
-                          {array.description}
-                        </div>
-                        <div className="date-container">{array.date}</div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+                  </MDBView>
+
+                  <MDBCardBody cascade className="text-center">
+                    <MDBCardTitle className="card-title">
+                      <strong>BI</strong>
+                    </MDBCardTitle>
+
+                    <p
+                      style={{ color: "blue" }}
+                      className="font-weight-bold blue-text"
+                    >
+                      Business Intelligence
+                    </p>
+
+                    <MDBCardText>
+                      Sed ut perspiciatis unde omnis iste natus sit voluptatem
+                      accusantium doloremque laudantium, totam rem aperiam.{" "}
+                    </MDBCardText>
+
+                    <MDBCol md="12" className="d-flex justify-content-center">
+                      <MDBBtn color="primary">Read more</MDBBtn>
+                    </MDBCol>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+
+              <MDBCol
+                md="4"
+                style={{ maxWidth: "30rem", border: "2px solid #fff" }}
+              >
+                <MDBCard wide cascade>
+                  <MDBView cascade>
+                    <MDBCardImage
+                      hover
+                      overlay="white-slight"
+                      className="card-img-top"
+                      src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg"
+                      alt="Card cap"
+                    />
+                  </MDBView>
+
+                  <MDBCardBody cascade className="text-center">
+                    <MDBCardTitle className="card-title">
+                      <strong>Marketing Web</strong>
+                    </MDBCardTitle>
+
+                    <p
+                      style={{ color: "blue" }}
+                      className="font-weight-bold blue-text"
+                    >
+                      SEO
+                    </p>
+
+                    <MDBCardText>
+                      Sed ut perspiciatis unde omnis iste natus sit voluptatem
+                      accusantium doloremque laudantium, totam rem aperiam.{" "}
+                    </MDBCardText>
+
+                    <MDBCol md="12" className="d-flex justify-content-center">
+                      <MDBBtn color="primary">Read more</MDBBtn>
+                    </MDBCol>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+
+              <MDBCol
+                md="4"
+                style={{ maxWidth: "30rem", border: "2px solid #fff" }}
+              >
+                <MDBCard wide cascade>
+                  <MDBView cascade>
+                    <MDBCardImage
+                      hover
+                      overlay="white-slight"
+                      className="card-img-top"
+                      src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg"
+                      alt="Card cap"
+                    />
+                  </MDBView>
+
+                  <MDBCardBody cascade className="text-center">
+                    <MDBCardTitle className="card-title">
+                      <strong>ERP Systems</strong>
+                    </MDBCardTitle>
+
+                    <p
+                      style={{ color: "blue" }}
+                      className="font-weight-bold blue-text"
+                    >
+                      Enterprise Resource Planning
+                    </p>
+
+                    <MDBCardText>
+                      Sed ut perspiciatis unde omnis iste natus sit voluptatem
+                      accusantium doloremque laudantium, totam rem aperiam.{" "}
+                    </MDBCardText>
+
+                    <MDBCol md="12" className="d-flex justify-content-center">
+                      <MDBBtn color="primary">Read more</MDBBtn>
+                    </MDBCol>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+            </MDBRow>
           )}
 
           {buttonClassID === 0 && <div>Allocated space for others tab</div>}
