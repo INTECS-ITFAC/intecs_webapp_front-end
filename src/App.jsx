@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import routes from "./routes";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./_helpers/history";
-// import "./App.scss";
 
 class App extends Component {
   render() {

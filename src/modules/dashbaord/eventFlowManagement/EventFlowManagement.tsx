@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./EvenetFloorManagement.scss";
-export class EvenetFloorManagement extends Component {
+export class EventFloorManagement extends Component {
   static propTypes = {};
 
   render() {
@@ -12,4 +12,4 @@ export class EvenetFloorManagement extends Component {
   }
 }
 
-export default EvenetFloorManagement;
+export default EventFloorManagement;
