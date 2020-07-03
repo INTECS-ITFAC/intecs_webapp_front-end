@@ -6,4 +6,4 @@ updates:
     interval: daily
     time: "23:00"
   open-pull-requests-limit: 10
-  target-branch: configure_dependabot
+  target-branch: dev
