@@ -7,3 +7,7 @@ updates:
     time: "23:00"
   open-pull-requests-limit: 10
   target-branch: dev
+  reviewers:
+    - "kelumsampath"
+    - "ChanakaUOMIT"
+    - "BhanukaUOM"
