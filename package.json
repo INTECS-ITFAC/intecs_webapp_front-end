@@ -38,7 +38,7 @@
     "react-scripts": "^3.4.1",
     "react-social-icons": "^4.1.0",
     "react-ticker": "^1.2.2",
-    "react-vertical-timeline-component": "^2.6.0",
+    "react-vertical-timeline-component": "^3.0.2",
     "redux": "^4.0.5",
     "redux-actions": "^2.6.5",
     "redux-logic": "^3.0.0",
