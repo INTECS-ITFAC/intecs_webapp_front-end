@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./EvenetManagement.scss";
-export class EvenetManagement extends Component {
+
+export class EventManagement extends Component {
   static propTypes = {};
 
   render() {
@@ -12,4 +13,4 @@ export class EvenetManagement extends Component {
   }
 }
 
-export default EvenetManagement;
+export default EventManagement;

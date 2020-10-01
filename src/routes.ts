@@ -31,6 +31,24 @@ const routes = [
     exact: true,
     component: Views.ProjectManagementView,
   },
+  {
+    path: "/dashboard/linkIT",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.DashboardLinkITView,
+  },
+  {
+    path: "/dashboard/addStudentWork",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.AddStudentWorkView,
+  },
+  {
+    path: "/dashboard/openSourceManagement",
+    layout: DashboardLayout,
+    exact: true,
+    component: Views.OpenSourceManagementView,
+  },
 
   {
     path: "/dashboard",
@@ -81,10 +99,28 @@ const routes = [
     component: Views.IntecsOpenSourceProjectsView,
   },
   {
-    path: "/studentsWork",
+    path: "/studentsWork/firstYear",
     layout: DefaultLayout,
     exact: true,
-    component: Views.StudentsWorkView,
+    component: Views.FirstYearWorkView,
+  },
+  {
+    path: "/studentsWork/secondYear",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.SecondYearWorkView,
+  },
+  {
+    path: "/studentsWork/finalYear",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.FinalYearWorkView,
+  },
+  {
+    path: "/studentsWork/research",
+    layout: DefaultLayout,
+    exact: true,
+    component: Views.ResearchWorkView,
   },
   {
     path: "/gallery",

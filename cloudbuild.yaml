@@ -1,0 +1,9 @@
+steps:
+  - name: bhanukauom/firebase:latest
+    entrypoint: /bin/sh
+    args:
+      - '-c'
+      - |
+        npm install && 
+        npm run build && \
+        firebase deploy --only hosting:intecs-pr

@@ -2,8 +2,12 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import Logo from "../../assets/images/intecs_logo.png";
 import "./Navbar.scss";
+import { useLocation } from "react-router-dom";
 
+// @ts-ignore
 function NavbarComponent() {
+  const location = useLocation();
+
   return (
     <Navbar
       bg="dark"
@@ -25,35 +29,50 @@ function NavbarComponent() {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <div className="link-div">
-            <Nav.Link href="/">Home</Nav.Link>
-          </div>
-          <div className="link-div">
-            <Nav.Link href="/events">Events</Nav.Link>
-          </div>
-          <div className="dropdown">
-            <Nav.Link>Projects</Nav.Link>
-            <div className="dropdown-content">
-              <a href="/linkIT">LinkIT</a>
-              <a href="/INTECSOpenSourceProjects">
-                INTECS Open Source Projects
-              </a>
-              <a href="/studentsWork">Students' Work</a>
+        {location.pathname === "/contributes" ? (
+          <Nav className="ml-auto">
+            <div className="link-div">
+              <Nav.Link href="/">Back</Nav.Link>
             </div>
-          </div>
-          <div className="link-div">
-            <Nav.Link href="/gallery">Gallery</Nav.Link>
-          </div>
-          <div className="link-div">
-            <Nav.Link href="/about">About Us</Nav.Link>
-          </div>
-        </Nav>
+          </Nav>
+        ) : (
+          <Nav className="ml-auto" activeKey={location.pathname}>
+            <div className="link-div">
+              <Nav.Link href="/">Home</Nav.Link>
+            </div>
+            <div className="link-div">
+              <Nav.Link href="/events">Events</Nav.Link>
+            </div>
+            <div className="dropdown link-div">
+              <Nav.Link>Projects</Nav.Link>
+              <div className="dropdown-content">
+                <a href="/linkIT">LinkIT</a>
+                <a href="/INTECSOpenSourceProjects">
+                  INTECS Open Source Projects
+                </a>
+              </div>
+            </div>
+            <div className="dropdown link-div">
+              <Nav.Link>Student's Work</Nav.Link>
+              <div className="dropdown-content">
+                <a href="/studentsWork/firstYear">First Year Projects</a>
+                <a href="/studentsWork/secondYear">Second Year Projects</a>
+                <a href="/studentsWork/finalYear">Final Year Projects</a>
+                <a href="/studentsWork/research">Research Publications</a>
+              </div>
+            </div>
+
+            <div className="link-div">
+              <Nav.Link href="/gallery">Gallery</Nav.Link>
+            </div>
+            <div className="link-div">
+              <Nav.Link href="/about">About Us</Nav.Link>
+            </div>
+          </Nav>
+        )}
       </Navbar.Collapse>
     </Navbar>
   );
 }
-
-NavbarComponent.propTypes = {};
 
 export default NavbarComponent;

@@ -1,0 +1,21 @@
+.students-work-container {
+  background-color: #b3e5fc;
+  height: 1000px;
+}
+
+.wrap-div {
+  height: 250px;
+}
+
+.title-div {
+  width: 100%;
+  padding-top: 80px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  z-index: 2;
+
+  h4 {
+    font-weight: bold;
+  }
+}

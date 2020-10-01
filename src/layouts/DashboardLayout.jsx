@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/navbar/Navbar";
-import DashboardSidebar from "../components/sidebar/dashboardSidebar/DashboardSidebar";
+import AdminNavBar from "../components/adminNavBar/AdminNavBar";
+import SideNavWithRouter from "../components/sidebar/dashboardSidebar/DashboardSidebar";
 
 const DashboardLayout = (ViewComponent) => {
   return class extends React.Component {
@@ -8,9 +8,9 @@ const DashboardLayout = (ViewComponent) => {
       return (
         <>
           {/* <Import the nav bar> */}
-          <Navbar />
+          <AdminNavBar />
           <div style={{ width: "100%", display: "flex", flexDirection: "row" }}>
-            <DashboardSidebar />
+            <SideNavWithRouter />
 
             {/* <div style={{ overflowX: 'scroll' }}> */}
             <ViewComponent />

@@ -1,0 +1,11 @@
+.carousal-div {
+  margin: 0 5px;
+  border-radius: 10px;
+  position: absolute;
+
+  img {
+    max-height: 250px;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+}
