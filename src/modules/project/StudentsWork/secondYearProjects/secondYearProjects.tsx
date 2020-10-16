@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SecondYearProjectHeader from "../../../../components/secondYearProjectsHeader/secondYearProjectsHeader";
 import "./secondYearProjects.scss";
 //import Heading from "./headerSW/headersw";
 
@@ -8,8 +9,7 @@ class SecondYearProjects extends Component {
   render() {
     return (
       <div className="students-work-container">
-        {/*<Heading />*/}
-        <div>Second year Work Allocated Space</div>
+        <SecondYearProjectHeader />
       </div>
     );
   }

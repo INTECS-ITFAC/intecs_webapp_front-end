@@ -1,0 +1,9 @@
+.carousel-inner-content {
+  height: 500px;
+}
+
+@media (max-width: 540px) {
+  .carousel-inner-content {
+    height: 300px;
+  }
+}
